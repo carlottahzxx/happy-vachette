@@ -45,9 +45,9 @@ hr{
     height: 700px;
 }
 
-#logo2{
+.logo2{
     margin-top: 15px;
-    height: 100px;
+    height: 10%;
     width: auto;
 }
 
