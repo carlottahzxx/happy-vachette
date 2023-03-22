@@ -18,7 +18,7 @@
     <main>
         <h1>
             INSCRIPTION
-            <a href="index.html"><img src="images/traverser.png" alt="retour"></a>
+            <a href="index.html"><img src="../../images/traverser.png" alt="retour"></a>
 
         </h1>
         
