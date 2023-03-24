@@ -16,8 +16,6 @@ header{
     justify-content: space-around;
     align-items: center;
     font-size: 1.5em;
-    
-   
 }
 
 .header-title-div{
@@ -131,8 +129,7 @@ h1 {
 
 
 
-.description-text{
-    
+.description-text{ 
     text-align: justify;
     font-size: 28px;
 }
