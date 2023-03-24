@@ -18,7 +18,7 @@
         <main>
         <h1>Boutique</h1>
         <section>
-        <a href="panier.html"><p><img src="../../../images/panier.png" alt="panier" /> 
+        <a href="panier.php"><p><img src="../../../images/panier.png" alt="panier" /> 
         </section>
 
         <a href="produitcollier.php"><h2>Collier Happy Vachette</h2></a>

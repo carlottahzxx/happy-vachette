@@ -16,17 +16,8 @@
 
 <body>
 
-    <header>
+<?php include("../../header/header.php") ?> 
 
- <a href="index.html">
-        <p>
-       <img src="images/Mon projet.png" alt="logo" />    
-        </p>
-         <a href="index.html">Accueil</a>  
-      <a href="boutique.html">Boutique</a>  
-      <a href="Mon espace.html">Mon espace</a>  
-
-    </header>
 
 <main>
     <h1>Mentions légales</h1>
