@@ -12,17 +12,7 @@
 
 
 <body>
-
-    <header>
-        <p>
-        <a href="index.html"><p><img src="images/Mon projet.png" alt="logo" /> </p></a>
-        <a href="index.html">Accueil</a> 
-        <a href="boutique.html">Boutique</a> 
-        <a href="Mon espace.html">Mon espace</a>  
-        <a href="connexion.html"><p> <img src="images/utilisateur.png" alt="logo" /></p></a>
-
-     
-    </header>
+<?php include("../header/header.php") ?> 
 
 
     <main>
