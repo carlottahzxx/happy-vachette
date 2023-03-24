@@ -18,8 +18,10 @@
     <main>
         <h1>
             NOTIFICATIONS
+            <a href="accueilco.html"><img src="images/traverser.png" alt="retour"></a>
+            
         </h1>
-
+        ALERTE : La vache 1 a un rythme cardiaque supérieur à  150 BPM
     </main>
 </body>
 </html>

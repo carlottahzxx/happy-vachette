@@ -16,36 +16,34 @@
 
 <body>
 
-    <header>
+    <?php include("../header/header.php") ?> 
 
-    <a href="index.html"><p> <img src="images/Mon projet.png" alt="logo" /> </p></a>
-    <a href="index.html">Accueil</a>  
-    <a href="Mon espace.html">Mon espace</a>  
-    <a href="grange.html">Granges</a> 
-    <a href="vaches.html">Vaches</a> 
-    <a href="colliers.html">Colliers</a> 
-    <a href="notifications.html"> <img src="images/cloche.png" alt="cloche" /></a>
-    <a href="connexion.html"> <img src="images/utilisateur.png" alt="utilisateur" /></a>
-
-    </header>
 
 <main>
-    <h1>Granges</h1>
-    Taux de CO2
-    Niveau sonore
-    <div><img src="images/angle-gauche.png" alt="flèche gauche">
-    <img src="images/angle-droit.png" alt="flèche droite">
-    </div>
-    Ajouter 
-    GRANGE 1
-    Supprimer
+    <h1>Vaches</h1>
 </main>
+
+    Température
+    Fréquence cardiaque
+    Taux d'humidité
+    <div><img src="images/angle-gauche.png" alt="flèche gauche">
+        <img src="images/angle-droit.png" alt="flèche droite">
+        </div>
+        <a href="ajouter_vache.html">Ajouter</a>  
+        <h3>Vache 1</h3>
+        <a href="supprimer_vache.html">Supprimer</a>  
+
+
+
+
 
 <footer>
     <a href="contact.html">Contact</a>  
     <a href="FAQ.html">FAQ</a>  
     <a href="mentions_légales.html">Mentions légales</a>
     Happy Vachette - Tous droits réservés © 2023  
+
+
 </footer>
 
 </body>

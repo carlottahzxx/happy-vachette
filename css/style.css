@@ -1,0 +1,196 @@
+body{
+    background-color: #E8E8E8;
+    margin:0;
+}
+
+.label-title{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.header-title-div{
+    display: flex;
+    align-items: left;
+    width: 60%;
+    padding: auto;
+}
+
+hr{
+    border: none;
+    background-color: #000000;
+    color: #000000;
+    overflow: visible;
+    height: 4px;
+    margin-left: 23%;
+    margin-right: 3%;
+}
+
+.header-background{
+    background-image: url("../images/vaches_pres.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 700px;
+}
+
+#logo2{
+    margin-top: 15px;
+    height: 100px;
+    width: auto;
+}
+
+footer{
+    background-color: #227043;
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+section{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.section1{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+h1{
+    color:#227043;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+}
+
+h2{
+    color:black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+h3{
+    color: darkslategrey;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+}
+
+
+.conteneur {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-gap: 10px;
+}
+
+.conteneur3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.label-title:hover{
+    color:#227043;
+}
+    
+
+.conteneur2{
+    display:flex;
+    justify-content:center;
+    align-items:center;   
+    width: 40%;
+    
+}
+
+.ma-classe {
+    color:#227043;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 10; 
+}
+
+
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+
+.description-text{ 
+    text-align: justify;
+    font-size: 28px;
+}
+
+.general-text{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 48%;
+}
+
+
+.image-vachette{
+    width: 80%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.div-vachette{
+    margin-left: 5%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-section{
+    display: flex;
+}
+
+.middle-section2{
+    display: flex;
+    height: 550px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.client{
+    background-image: url("../images/empty_rectangle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 25%;
+    border-radius: 30px;
+}
+
+.capteur{
+    background-image: url("../images/empty_rectangle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 25%;
+    border-radius: 30px;
+}
+
+.resultat{
+    background-image: url("../images/empty_rectangle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 25%;
+    border-radius: 30px;
+   
+}

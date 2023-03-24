@@ -15,18 +15,31 @@
 
 
 <body>
-    <main>
-        <h1>
-            INSCRIPTION
-        </h1>
-<section>Nom</section>
-<section>Prénom</section>
-<section>Adresse mail</section>
-<section>Mot de passe</section>
-<section>S'inscrire</section>
-<section>Déjà un compte ? 
-        <a href="connexion.html">Connectez-vous</a> 
-</section>
-    </main>
+
+    <header>
+
+ <a href="index.html">
+        <p>
+       <img src="images/Mon projet.png" alt="logo" />    
+        </p></a>
+        
+
+    </header>
+
+<main>
+    <a href="vaches.html"><img src="images/traverser.png" alt="retour"></a>
+    <h1>Supprimer vache</h1>
+    <div>Nom</div>
+    <div>Type</div>
+    Supprimer
+</main>
+
+    
+
+
+
+</footer>
+
 </body>
+
 </html>

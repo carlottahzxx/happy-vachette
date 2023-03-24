@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 
+
 <body>
 
     <header>
@@ -20,27 +21,21 @@
  <a href="index.html">
         <p>
        <img src="images/Mon projet.png" alt="logo" />    
-        </p>
-        <a href="index.html">Accueil</a>  
-      <a href="Mon espace.html">Mon espace</a> 
-      <a href="grange.html">Granges</a> 
-      <a href="vaches.html">Vaches</a> 
-      <a href="colliers.html">Colliers</a>  
+        </p></a>
+        
 
     </header>
 
 <main>
-    <h1>Colliers</h1>
+    <a href="vaches.html"><img src="images/traverser.png" alt="retour"></a>
+    <h1>Nouvelle vache</h1>
+    <div>Nom</div>
+    <div>Type</div>
+    Ajouter
 </main>
 
+    
 
-
-
-<footer>
-    <a href="contact.html">Contact</a>  
-    <a href="FAQ.html">FAQ</a>  
-    <a href="mentions_légales.html">Mentions légales</a>
-    Happy Vachette - Tous droits réservés © 2023  
 
 
 </footer>
