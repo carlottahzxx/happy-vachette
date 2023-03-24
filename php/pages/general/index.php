@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Accueil</title>
-    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 <body>
     
     <div  class="header-background">
-        <?php include("../header/header.php") ?> 
+        <?php include("../../header/header.php") ?> 
     </div> 
 
     <main>
@@ -50,7 +50,7 @@
             </div>
 
             <div class = "div-vachette">
-                <img class = "image-vachette" src="../../images/vachette.jpg"/>
+                <img class = "image-vachette" src="../../../images/vachette.jpg"/>
             </div>
         </div>
 
@@ -95,7 +95,7 @@
 
     </main>
 
-    <?php include("../footer/footer.php"); ?>
+    <?php include("../../footer/footer.php"); ?>
 
 </body>
 
