@@ -17,15 +17,8 @@
 <body>
 
     <header>
+    <?php include("../header/header.php") ?> 
 
-    <a href="index.html"><p> <img src="images/Mon projet.png" alt="logo" /> </p></a>
-    <a href="index.html">Accueil</a>  
-    <a href="Mon espace.html">Mon espace</a>  
-    <a href="grange.html">Granges</a> 
-    <a href="vaches.html">Vaches</a> 
-    <a href="colliers.html">Colliers</a> 
-    <a href="notifications.html"> <img src="images/cloche.png" alt="cloche" /></a>
-    <a href="connexion.html"> <img src="images/utilisateur.png" alt="utilisateur" /></a>
 
     </header>
 

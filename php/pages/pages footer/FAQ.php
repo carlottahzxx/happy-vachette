@@ -15,17 +15,7 @@
 
 <body>
 
-    <header>
-        <a href="index.html"><p><img src="images/Mon projet.png" alt="logo" /> 
-            <a href="index.html">Accueil</a>  
-      <a href="boutique.html">Boutique</a>  
-      <a href="Mon espace.html">Mon espace</a>  
-      <a href="notifications.html"> <img src="images/cloche.png" alt="cloche" /></a>
-    <a href="connexion.html"> <img src="images/utilisateur.png" alt="utilisateur" /></a>
-
-
-    </header>
-
+<?php include("../header/header.php") ?> 
     <main>
         <h1> FAQ</h1>
         <div>Comment me connecter à l'application ?</div>
