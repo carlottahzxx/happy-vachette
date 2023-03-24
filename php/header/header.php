@@ -1,6 +1,6 @@
 <div>
     <header>
-        <a href="../pages/index.php"><img class="logo2" src="../../../images/green_hv_logo.png" alt="logo" /></a> 
+        <a href="../general/index.php"><img class="logo2" src="../../../images/green_hv_logo.png" alt="logo" /></a> 
         
         <div class = "header-title-div">
             <a class ="label-title" href="../general/index.php">Accueil</a>  

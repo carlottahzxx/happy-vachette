@@ -19,7 +19,7 @@
         <a href="boutique.php"><img src="../../../images/fleche-petite-gauche.png" alt="retour"></a>
         Retour à la boutique
         <h2>Le Collier</h2>
-        <a href="panier.html"><p><img src="../../../images/panier.png" alt="panier" /> </p> </a>
+        <a href="panier.php"><p><img src="../../../images/panier.png" alt="panier" /> </p> </a>
         <img src="../../../images/collier.webp" alt="collier">
         <h2>9999,99€</h2>
         <h3>Un collier pour les vachettes stylées</h3>

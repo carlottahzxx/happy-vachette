@@ -15,7 +15,7 @@
 
 <body>
 
-<?php include("../header/header.php") ?> 
+<?php include("../../header/header.php") ?> 
     <main>
         <h1> FAQ</h1>
         <div>Comment me connecter à l'application ?</div>

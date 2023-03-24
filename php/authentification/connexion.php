@@ -19,7 +19,7 @@
 
         <h1>
             CONNEXION
-            <a href="../../php/pages/index.php"><img src="../../images/traverser.png" alt="retour"></a>
+            <a href="../pages/general/index.php"><img src="../../images/traverser.png" alt="retour"></a>
 
         </h1>
         <section>
@@ -36,7 +36,7 @@
             </form>
         </section>
 <section>Mot de passe oublié ?</section>
-<section><a href="../../php/pages/index.php">Se connecter</a> 
+<section><a href="../../general/index.php">Se connecter</a> 
 <section>Pas de compte ? 
     <a href="inscription.php">Inscrivez-vous</a> 
 </section>

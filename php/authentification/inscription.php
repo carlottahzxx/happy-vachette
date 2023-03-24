@@ -18,7 +18,7 @@
     <main>
         <h1>
             INSCRIPTION
-            <a href="index.html"><img src="../../images/traverser.png" alt="retour"></a>
+            <a href="../pages/general/index.php"><img src="../../images/traverser.png" alt="retour"></a>
 
         </h1>
         
@@ -40,7 +40,7 @@
     </section>
     <section>S'inscrire</section>
 <section>Déjà un compte ? 
-        <a href="connexion.html">Connectez-vous</a> 
+        <a href="connexion.php">Connectez-vous</a> 
 </section>
     </main>
 </body>
