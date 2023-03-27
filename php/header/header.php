@@ -6,7 +6,7 @@
 
 <div>
     <header class="header">
-        <a href="../../pages/general/index.php"><img class="logo2" src="../../../images/green_hv_logo.png" alt="logo" /></a> 
+        <a class="logo2" href="../../pages/general/index.php"><img src="../../../images/green_hv_logo.png" alt="logo" /></a> 
         
         <div class = "header-title-div">
             <a class ="label-title" href="../general/index.php">Accueil</a>  

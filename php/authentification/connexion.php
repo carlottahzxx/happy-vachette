@@ -19,7 +19,7 @@
 
         <h1>
             CONNEXION
-            <a href="../../php/pages/index.php"><img src="../../images/traverser.png" alt="retour"></a>
+            <a href="../pages/general/index.php"><img src="../../images/traverser.png" alt="retour"></a>
 
         </h1>
         <section>
