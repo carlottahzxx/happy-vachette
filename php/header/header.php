@@ -1,6 +1,8 @@
 
 
-
+<?php
+     $connected = true;
+?>
 
 <div>
     <header class = "header">
@@ -11,16 +13,22 @@
         <div class = "header-title-div">
             <a class ="label-title" href="../../php/pages/index.php">Accueil</a>  
             <a class ="label-title" href="../../php/pages/boutique.php">Boutique</a>  
-            <a class ="menu-espace" href="../../php/pages/mon_espace.php">Mon espace</a>
-            <ul class="menu">
-                <li><a href="#">Option 1</a></li>
-                <li><a href="#">Option 2</a></li>
-                <li><a href="#">Option 3</a></li>
-            </ul>
-            
+            <ul class="menu">Mon espace
+                <div class="dropdown">
+                    <?php
+                        if($connected){
+                            echo '<li><a href="#">Granges</a></li>
+                            <li><a href="#">Vaches</a></li>
+                            <li><a href="#">Colliers</a></li>';
+                        }else{
+                            echo '<li><a href="#">Connectez vous</a></li>';
+                        }
+                    ?>
+                </div>
+            </ul>   
         </div>
         <?php
-            $connected = true;
+           
             if($connected){
                 echo '<a class = "logo-notif" href="../../connexion.html"> <img src="../../images/notif.png" alt="logo-notif" /></a>';
             }

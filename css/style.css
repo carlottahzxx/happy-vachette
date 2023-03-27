@@ -282,15 +282,41 @@ h1 {
     margin-right: 8px;
 }
 
-.menu{
+.menu {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: none;
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw;
 }
   
-.menu li:hover{
-    background-color: #ccc;
+.menu li {
+    display: none;
+    margin-top: 5px;
+}
+  
+.menu:hover li {
     display: block;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: #227043;
+}
+  
+.menu li:hover {
+    
+}
+
+.dropdown{
+    position:absolute;
+    background-color: #B1CFB9;
 }
   
