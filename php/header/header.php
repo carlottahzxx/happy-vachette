@@ -11,13 +11,13 @@
         <div class = "header-title-div">
             <a class ="label-title" href="../../php/pages/index.php">Accueil</a>  
             <a class ="label-title" href="../../php/pages/boutique.php">Boutique</a>  
-            <a class ="menu-espace" href="../../php/pages/mon_espace.php">Mon espace
-                <ul>
-                    <li><a href="#">Granges</a><li> 
-                    <li><a href="#">Vaches</a><li> 
-                    <li><a href="#">Colliers</a><li> 
-                </ul>
-            </a>
+            <a class ="menu-espace" href="../../php/pages/mon_espace.php">Mon espace</a>
+            <ul class="menu">
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+            
         </div>
         <?php
             $connected = true;
