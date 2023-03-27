@@ -5,14 +5,12 @@
 ?>
 
 <div>
-    <header class = "header">
-        <a class ="logo2" href="../pages/index.php">
-            <img src="../../images/green_hv_logo.png" alt="logo" />
-        </a> 
+    <header>
+        <a href="../pages/index.php"><img class="logo2" src="../../../images/green_hv_logo.png" alt="logo" /></a> 
         
         <div class = "header-title-div">
-            <a class ="label-title" href="../../php/pages/index.php">Accueil</a>  
-            <a class ="label-title" href="../../php/pages/boutique.php">Boutique</a>  
+            <a class ="label-title" href="../general/index.php">Accueil</a>  
+            <a class ="label-title" href="../boutique/boutique.php">Boutique</a>  
             <ul class="menu">Mon espace
                 <div class="dropdown">
                     <?php

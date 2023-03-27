@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Accueil</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 
         <h1>
             CONNEXION
-            <a href="index.html"><img src="../../images/traverser.png" alt="retour"></a>
+            <a href="../../php/pages/index.php"><img src="../../images/traverser.png" alt="retour"></a>
 
         </h1>
         <section>
@@ -36,9 +36,9 @@
             </form>
         </section>
 <section>Mot de passe oublié ?</section>
-<section><a href="accueilco.html">Se connecter</a> 
+<section><a href="../../php/pages/index.php">Se connecter</a> 
 <section>Pas de compte ? 
-    <a href="inscription.html">Inscrivez-vous</a> 
+    <a href="inscription.php">Inscrivez-vous</a> 
 </section>
     </main>
 </body>
