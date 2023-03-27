@@ -5,8 +5,8 @@
 ?>
 
 <div>
-    <header>
-        <a href="../pages/index.php"><img class="logo2" src="../../../images/green_hv_logo.png" alt="logo" /></a> 
+    <header class="header">
+        <a href="../../pages/general/index.php"><img class="logo2" src="../../../images/green_hv_logo.png" alt="logo" /></a> 
         
         <div class = "header-title-div">
             <a class ="label-title" href="../general/index.php">Accueil</a>  
@@ -28,10 +28,10 @@
         <?php
            
             if($connected){
-                echo '<a class = "logo-notif" href="../../connexion.html"> <img src="../../images/notif.png" alt="logo-notif" /></a>';
+                echo '<a class = "logo-notif" href="../../authentification/connexion.php"> <img src="../../../images/notif.png" alt="logo-notif" /></a>';
             }
 
-            echo '<a class = "logo-connect" href="../../connexion.html"> <img src="../../images/compte.png" alt="logo-connect" /></a>
+            echo '<a class = "logo-connect" href="../../authentification/connexion.php"> <img src="../../../images/compte.png" alt="logo-connect" /></a>
             </header>';
 
             if($connected){
