@@ -17,9 +17,10 @@
 
         <main>
         <h1>Panier</h1>
+        <h4> Vous n'avez aucun produit dans votre panier </h4>
         </main>
 
-        <?php include("../../footer/footer.php"); ?>
+<?php include("../../footer/footer.php"); ?>
 
 </body>
 

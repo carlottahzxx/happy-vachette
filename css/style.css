@@ -67,9 +67,10 @@ section{
 }
 
 h1{
-    color:#227043;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2em;
+    color: white;
+    text-align: center;
 }
 
 h2{
@@ -121,11 +122,6 @@ body {
 }
 
 
-
-h1 {
-    color: white;
-    text-align: center;
-}
 
 
 
@@ -194,4 +190,20 @@ h1 {
     border-radius: 30px;
    
 }
+h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
