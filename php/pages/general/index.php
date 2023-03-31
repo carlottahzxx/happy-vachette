@@ -55,22 +55,8 @@
         </div>
 
 
-        <div class = "middle-section2">
-
-            <div class = "middle-section-div">
-                <header class="middle-section-header" >Client</header>
-            </div>
-
-            <div class = "middle-section-div">
-                <header class="middle-section-header" >Capteurs</header>
-            </div>
-
-            <div class = "middle-section-div">
-                <header class="middle-section-header" >Résultats</header>
-            </div>
-
-
-        </div>
+  
+        <div class="animation_div">
         <figure class="snip1482">
     <figcaption>
       <h2>Client</h2>
@@ -92,6 +78,7 @@
     </figcaption>
     <a href="#"></a><img class="image-vachette"  src="../../../images/vachette.jpg" alt="sample60" />
   </figure>
+</div>
 
 
         <div class="botom-section">
