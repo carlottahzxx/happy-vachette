@@ -18,9 +18,9 @@
 <?php include("../../header/header.php") ?> 
     <main>
         <h1> FAQ</h1>
-        <div>Comment me connecter à l'application ?</div>
-        <div>Mon capteur ne fonctionne pas, que faire ?</div>
-        <h2>D'autres questions ? Cliquez <a href="contact.html">ici</a> </h2>
+        <h5><div>Comment me connecter à l'application ?</div>
+        <div>Mon capteur ne fonctionne pas, que faire ?</div></h5>
+        <h2>D'autres questions ? Cliquez <a href="contact.php">ici</a> </h2>
         
 
 

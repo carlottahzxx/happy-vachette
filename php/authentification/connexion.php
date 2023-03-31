@@ -36,7 +36,6 @@
             </form>
         </section>
 <section>Mot de passe oublié ?</section>
-<section><a href="../../general/index.php">Se connecter</a> 
 <section>Pas de compte ? 
     <a href="inscription.php">Inscrivez-vous</a> 
 </section>

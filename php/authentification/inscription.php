@@ -22,8 +22,6 @@
 
         </h1>
         
-
-
     <section>
         <form action="" method="get">
             <label for="prenom">Votre prénom</label>
@@ -34,11 +32,11 @@
             <input type="email" name="email" id="email" required>
             <label for="motdepasse">Votre mot de passe</label>
             <input type="password" name="motdepasse" id="motdepasse" required>
-
+            <label for="checkbox">J'accepte les <a class = "inscription-text" href="../pages/general/CGU.php">CGU</a> </label>
+            <input id="checkbox" name="checkbox" type="checkbox" required>
         <input type="submit" value="S'inscrire" />
         </form>
     </section>
-    <section>S'inscrire</section>
 <section>Déjà un compte ? 
         <a href="connexion.php">Connectez-vous</a> 
 </section>

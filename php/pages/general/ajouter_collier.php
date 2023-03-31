@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Accueil</title>
-    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
@@ -16,28 +16,29 @@
 
 <body>
 
-<?php include("../../header/header.php") ?> 
+    <header>
+
+ <a href="index.html">
+        <p>
+       <img src="images/Mon projet.png" alt="logo" />    
+        </p></a>
+        
 
     </header>
 
 <main>
-    <h1>Colliers</h1>
+    <a href="vaches.html"><img src="images/traverser.png" alt="retour"></a>
+    <h1>Nouvelle vache</h1>
+    <div>Nom</div>
+    <div>Type</div>
+    Ajouter
 </main>
 
-    <div><img src="../../../images/angle-gauche.png" alt="flèche gauche">
-        Collier 1 associé à la vache 1
-        <img src="../../../images/angle-droit.png" alt="flèche droite">
-        </div>
-        <a href="ajouter_collier.php">Ajouter</a>  
-        <h3>Collier 1</h3>
-        <a href="supprimer_collier.php">Supprimer</a>  
+    
 
 
 
-
-
-<?php include("../../footer/footer.php"); ?>
-
+</footer>
 
 </body>
 

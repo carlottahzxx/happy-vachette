@@ -13,32 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
 
 <?php include("../../header/header.php") ?> 
+    <main>
+        <h1> CGU</h1>     
 
-    </header>
-
-<main>
-    <h1>Colliers</h1>
-</main>
-
-    <div><img src="../../../images/angle-gauche.png" alt="flèche gauche">
-        Collier 1 associé à la vache 1
-        <img src="../../../images/angle-droit.png" alt="flèche droite">
-        </div>
-        <a href="ajouter_collier.php">Ajouter</a>  
-        <h3>Collier 1</h3>
-        <a href="supprimer_collier.php">Supprimer</a>  
-
-
-
-
-
-<?php include("../../footer/footer.php"); ?>
-
-
+    </main>
+    <?php include("../../footer/footer.php"); ?>
 </body>
-
 </html>

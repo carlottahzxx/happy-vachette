@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Accueil</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 
 <body>
 
-    <?php include("../header/header.php") ?> 
+    <?php include("../../header/header.php") ?> 
 
 
 <main>
@@ -26,12 +26,14 @@
     Température
     Fréquence cardiaque
     Taux d'humidité
-    <div><img src="images/angle-gauche.png" alt="flèche gauche">
-        <img src="images/angle-droit.png" alt="flèche droite">
+    <div class="flèche"><img src="../../../images/angle-gauche.png" alt="flèche gauche">
+        <img src="../../../images/vachettemimi.png">
+        <img src="../../../images/angle-droit.png" alt="flèche droite">
         </div>
-        <a href="ajouter_vache.html">Ajouter</a>  
+        <div class="cowbutton">
+        <a href="ajouter_vache.php"><button type="button">Ajouter</button></a>  
         <h3>Vache 1</h3>
-        <a href="supprimer_vache.html">Supprimer</a>  
+        <a href="supprimer_vache.php"><button type="button">Supprimer</button></a>  </div>
 
 
         <?php include("../../footer/footer.php"); ?>

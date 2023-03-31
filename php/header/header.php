@@ -15,9 +15,9 @@
                 <div class="dropdown">
                     <?php
                         if($connected){
-                            echo '<li><a href="#">Granges</a></li>
-                            <li><a href="#">Vaches</a></li>
-                            <li><a href="#">Colliers</a></li>';
+                            echo '<li><a href="../../pages/general/grange.php">Granges</a></li>
+                            <li><a href="../../pages/vaches/vaches.php">Vaches</a></li>
+                            <li><a href="../../pages/general/colliers.php">Colliers</a></li>';
                         }else{
                             echo '<li><a href="#">Connectez vous</a></li>';
                         }

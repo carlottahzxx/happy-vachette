@@ -17,7 +17,7 @@
 
     <main>
         <a href="boutique.php"><img src="../../../images/fleche-petite-gauche.png" alt="retour"></a>
-        Retour à la boutique
+        <h5>Retour à la boutique</h5>
         <h2>Le Collier</h2>
         <a href="panier.php"><p><img src="../../../images/panier.png" alt="panier" /> </p> </a>
         <img src="../../../images/collier.webp" alt="collier">

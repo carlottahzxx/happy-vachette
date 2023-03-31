@@ -26,7 +26,7 @@
 
             <div class = "general-text">
                 <h3>HAPPY VACHETTE ET SES COLLIERS</h3>
-
+            
                 <div class = "description-text">
                     <p><br>Notre équipe est composée de six étudiants de l’ISEP <span class="ma-classe">surmotivés</span>
                                 pour améliorer les conditions de vie des animaux d’élevages 
@@ -43,7 +43,7 @@
                 <div class = "description-text">
                     <p><br>Si nous détectons grâce à ce collier que vos vaches vivent 
                     dans de bonnes conditions alors nous vous attribuerons notre 
-                    label <span class="ma-classe"></span> qui est preuve d’engagement dans le bien-être 
+                    label qui est preuve d’engagement dans le bien-être 
                     animal.</p>
                 </div>
 
@@ -71,6 +71,27 @@
 
 
         </div>
+        <figure class="snip1482">
+    <figcaption>
+      <h2>Client</h2>
+      <p>De nombreux éleveurs nous font confiance !</p>
+    </figcaption>
+    <a href="#"></a><img class="image-vachette" src="../../../images/vachette.jpg" alt="sample45" />
+  </figure>
+  <figure class="snip1482">
+    <figcaption>
+      <h2>Capteurs</h2>
+      <p>Les capteurs sont super.</p>
+    </figcaption>
+    <a href="#"></a><img class="image-vachette" src="../../../images/vachette.jpg" alt="sample59" />
+  </figure>
+  <figure class="snip1482">
+    <figcaption>
+      <h2>Résultats</h2>
+      <p>Des résultats toop.</p>
+    </figcaption>
+    <a href="#"></a><img class="image-vachette"  src="../../../images/vachette.jpg" alt="sample60" />
+  </figure>
 
 
         <div class="botom-section">
