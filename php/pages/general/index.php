@@ -57,39 +57,44 @@
 
         <div class = "middle-section2">
 
-            <div class = "client">
+            <div class = "middle-section-div">
+                <header class="middle-section-header" >Client</header>
             </div>
 
-            <div class = "capteur">
+            <div class = "middle-section-div">
+                <header class="middle-section-header" >Capteurs</header>
             </div>
 
-            <div class = "resultat">
+            <div class = "middle-section-div">
+                <header class="middle-section-header" >Résultats</header>
             </div>
-
 
 
         </div>
 
 
-        <section>
-            <div class="conteneur3">
-                <div class="box one">Nos clients</div>
-                <div class="box two">Nos capteurs</div>
-                <div class="box three">Nos résultats</div>
-            </div>  
-        </section>
-
-        <div class="conteneur">
-            <div class="box une">Carlotta</div>
-            <div class="box deux">Daniel</div>
-            <div class="box trois">Antoine</div>
-            <div class="box quatre">Léa</div>
-            <div class="box cinq">Maxence</div>
-            <div class="box six">Léonard</div>
+        <div class="botom-section">
+            <div class="portrait-antoine">
+                <footer class = "middle-section-footer">Antoine</footer>
+            </div>
+            <div class="portrait-antoine">
+                <footer class = "middle-section-footer">Maxence</footer>
+            </div>
+            <div class="portrait-antoine">
+                <footer class = "middle-section-footer">Léonard</footer>
+            </div>
+        </div>
+        <div class = "botom-section"> 
+            <div class="portrait-antoine">
+                <footer class = "middle-section-footer">Carlotta</footer>
+            </div>
+            <div class="portrait-antoine">
+                <footer class = "middle-section-footer">Daniel</footer>
+            </div>
+            <div class="portrait-antoine">
+                <footer class = "middle-section-footer">Léa</footer>
+            </div>
         </div>  
-
-        <div>LE COLLIER Commander
-        </div>
 
   
 
