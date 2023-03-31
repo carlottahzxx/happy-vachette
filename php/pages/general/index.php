@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Accueil</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +51,9 @@
             </div>
 
             <div class = "div-vachette">
-                <img class = "image-vachette" src="../../../images/vachette.jpg"/>
+                <img class = "image-vachette" id ="vachette" src="../../../images/vachette2.png"/>
+                <img id="left-eye" src="../../../images/eye.png">
+                <img id="right-eye" src="../../../images/eye.png">
             </div>
         </div>
 
@@ -109,7 +112,7 @@
     </main>
 
     <?php include("../../footer/footer.php"); ?>
-
+    <script src="../../../eyeFollow.js"></script>
 </body>
 
 </html>

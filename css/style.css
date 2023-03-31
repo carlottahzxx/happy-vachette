@@ -130,7 +130,7 @@ h2{
 h3{
     color: darkslategrey;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 40px;
+    font-size: 4vw;
 }
 
 
@@ -188,13 +188,13 @@ body {
 
 .description-text{
     text-align: justify;
-    font-size: 23px;
+    font-size: 2vw;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 
 .image-vachette{
-    width: 30vw;
+    width: 38vw;
     height: auto;
     border-radius: 30px;
 }
@@ -479,4 +479,15 @@ button {
     justify-content: space-around;
 
  
+}
+
+#left-eye{
+    position: absolute;
+    pointer-events: none;
+    
+}
+
+#right-eye{
+    position: absolute;
+    pointer-events: none;
 }
