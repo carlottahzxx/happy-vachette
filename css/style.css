@@ -491,3 +491,33 @@ button {
     position: absolute;
     pointer-events: none;
 }
+
+
+.product-div{
+    display: flex;
+    align-items: start;
+    margin-top: 4.7vw;
+    margin-left: 10%;
+}
+
+.product-image{
+    display: flex;
+    width: 18vw;
+}
+
+.product-image img{
+    width: 100%;
+}
+
+
+.product-text{
+    flex-direction: row;
+    margin: 1.6vw;
+    font-size: 1.7vw;
+}
+
+.product-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

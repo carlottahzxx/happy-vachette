@@ -27,7 +27,7 @@
     Taux de CO2
     Niveau sonore
     <div class="flèche"><img src="../../../images/angle-gauche.png" alt="flèche gauche">
-        <img src="../../../images/grange.jpg">
+        <img src="../../../images/grange.png">
         <img src="../../../images/angle-droit.png" alt="flèche droite">
         </div>
         <div class="cowbutton">

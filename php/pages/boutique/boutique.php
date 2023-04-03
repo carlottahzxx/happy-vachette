@@ -14,9 +14,26 @@
 <body>
 
     <?php include("../../header/header.php"); ?>
+        
+        
 
         <main>
         <h1>Boutique</h1>
+
+        <div class="product-list">
+        <?php require __DIR__ . '/produit.php';
+
+
+         product("Collier","10.99$","empty_rectangle.png");
+
+         product("Stylo","7.99$","empty_rectangle.png");
+         
+         product("Bob Happy Vachette","15.99$","empty_rectangle.png");
+
+         ?>
+         </div>
+
+
         <section>
             <a href="panier.php"><p><img src="../../../images/panier.png" alt="panier" /> 
         </section>
