@@ -24,26 +24,14 @@
         <?php require __DIR__ . '/produit.php';
 
 
-         product("Collier","10.99$","empty_rectangle.png");
+         product("Collier","10.99$","collier_hv.png");
 
-         product("Stylo","7.99$","empty_rectangle.png");
+         product("Stylo","7.99$","stylo_hv.png");
          
-         product("Bob Happy Vachette","15.99$","empty_rectangle.png");
+         product("Bob Happy Vachette","15.99$","bob_hv.png");
 
          ?>
          </div>
-
-
-        <section>
-            <a href="panier.php"><p><img src="../../../images/panier.png" alt="panier" /> 
-        </section>
-
-        <a href="produitcollier.php"><h2>Collier Happy Vachette</h2></a>
-        <h2>Sweat Happy Vachette</h2>
-        <h2>Stylo Happy Vachette</h2>
-        <h2>Stickers Happy Vachette</h2>
-        
-        
         </main>
 
     <?php include("../../footer/footer.php"); ?>

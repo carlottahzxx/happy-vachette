@@ -2,6 +2,7 @@
 body{
     background-color: #B1CFB9;
     margin:0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .label-title{
@@ -113,26 +114,6 @@ section{
     margin-top: 30px;
     margin-left: 30px;
 }
-
-h1{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2em;
-    color: white;
-    text-align: center;
-}
-
-h2{
-    color:black;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5em;
-}
-
-h3{
-    color: darkslategrey;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 4vw;
-}
-
 
 .botom-section {
     display: flex;
@@ -305,14 +286,7 @@ body {
 .menu li:hover {
     
 }
-h4{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1em;
-    color: black;
-    text-align: center;
-    margin-top: 200px;
-    margin-bottom: 200px;
-}
+
 
 h5{
     font-family: 'Josefin Sans', sans-serif;
@@ -321,22 +295,13 @@ h5{
 }
 
 
-a{
-    color: white;
-    text-decoration: none;
-}
 
-a:hover{
-    text-decoration: underline;
-}
 
 .dropdown{
     position:absolute;
     background-color: #B1CFB9;
 }
 
-
-  
 
 .dropdown{
     position:absolute;
@@ -422,18 +387,6 @@ a:hover{
   transform: translateX(0px);
   opacity: 1;
 }
-button {
-    display: inline-block;
-    background-color: #227043;
-    border-radius: 10px;
-    color: #eeeeee;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    cursor: pointer;
-    margin: 5px;
-  }
 
 .buttonaj {
     display: inline-block;
@@ -498,6 +451,13 @@ button {
     align-items: start;
     margin-top: 4.7vw;
     margin-left: 10%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.product-div :hover{
+    color: #227043;
 }
 
 .product-image{
@@ -514,6 +474,7 @@ button {
     flex-direction: row;
     margin: 1.6vw;
     font-size: 1.7vw;
+    
 }
 
 .product-list{
@@ -521,3 +482,89 @@ button {
     flex-direction: column;
     justify-content: center;
 }
+
+.retour-div{
+    display: flex;
+    width: 5vw;
+    
+}
+
+.panier-div{
+    display: flex;
+    width: 5vw;
+
+    
+}
+
+.retour-img{
+    width: 100%;
+}
+
+.panier-img{
+    width: 100%;
+}
+
+.logo-div{
+    display: flex;
+    margin: 1.5vw;
+    justify-content: space-between;
+}
+
+
+.product-detail-div{
+    display: flex;
+}
+
+.product-detail-image{
+    margin: 3vw;
+    width: 30vw;
+    height: 30vw;
+}
+
+.product-title{
+    font-size: 3vw;
+    color: #000000;
+    justify-content: start;
+}
+
+.product-price{
+    font-size: 2vw;
+    color: #000000;
+    justify-content: start;
+    
+}
+
+
+.product-desc{
+    font-size: 1vw;
+    color: #000000;
+    justify-content: start;
+    align-items: start;
+    
+}
+
+.bouton-panier{
+    background-color: #227043;
+    border-width: 0;
+    border-radius: 1vw;
+    align-items: center;
+}
+
+.bouton-panier h2{
+    color: #FFF;
+    font-size: 1vw;
+}
+
+.product-info-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.3vw;
+    margin-bottom: 3vw;
+}
+
+
+
+
+
+
