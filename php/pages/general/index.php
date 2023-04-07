@@ -59,29 +59,33 @@
 
 
   
-        <div class="animation_div">
+    <div class="animation_div">
         <figure class="snip1482">
-    <figcaption>
-      <h2>Client</h2>
-      <p>De nombreux éleveurs nous font confiance !</p>
-    </figcaption>
-    <a href="#"></a><img class="image-vachette" src="../../../images/vachette.jpg" alt="sample45" />
-  </figure>
-  <figure class="snip1482">
-    <figcaption>
-      <h2>Capteurs</h2>
-      <p>Les capteurs sont super.</p>
-    </figcaption>
-    <a href="#"></a><img class="image-vachette" src="../../../images/vachette.jpg" alt="sample59" />
-  </figure>
-  <figure class="snip1482">
-    <figcaption>
-      <h2>Résultats</h2>
-      <p>Des résultats toop.</p>
-    </figcaption>
-    <a href="#"></a><img class="image-vachette"  src="../../../images/vachette.jpg" alt="sample60" />
-  </figure>
-</div>
+
+            <figcaption>
+                <h2>Client</h2>
+                <p>De nombreux éleveurs nous font confiance !</p>
+            </figcaption>
+
+            <a href="#"></a><img class="image-vachette" src="../../../images/vachette.jpg" alt="sample45" />
+        </figure>
+
+        <figure class="snip1482">
+            <figcaption>
+                <h2>Capteurs</h2>
+                <p>Les capteurs sont super.</p>
+            </figcaption>
+            <a href="#"></a><img class="image-vachette" src="../../../images/vachette.jpg" alt="sample59" />
+        </figure>
+
+        <figure class="snip1482">
+            <figcaption>
+                <h2>Résultats</h2>
+                <p>Des résultats top.</p>
+            </figcaption>
+            <a href="#"></a><img class="image-vachette"  src="../../../images/vachette.jpg" alt="sample60" />
+        </figure>
+    </div>
 
 
         <div class="botom-section">
