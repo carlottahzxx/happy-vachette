@@ -82,6 +82,7 @@ hr{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    margin-right: 10px;
     
     
 }
@@ -283,10 +284,6 @@ body {
     color: #227043;
 }
   
-.menu li:hover {
-    
-}
-
 
 h5{
     font-family: 'Josefin Sans', sans-serif;
@@ -544,16 +541,17 @@ h5{
 }
 
 .bouton-panier{
+    display: inline-block;
     background-color: #227043;
-    border-width: 0;
+    border-width: 1;
     border-radius: 1vw;
     align-items: center;
-}
-
-.bouton-panier h2{
     color: #FFF;
     font-size: 1vw;
+    height: 3vw;
+    cursor: pointer;
 }
+
 
 .product-info-div{
     display: flex;
@@ -561,10 +559,7 @@ h5{
     justify-content: space-between;
     margin: 1.3vw;
     margin-bottom: 3vw;
+
 }
-
-
-
-
 
 

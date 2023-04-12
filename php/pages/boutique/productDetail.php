@@ -19,10 +19,11 @@
                 <h2 class='product-price'>$price</h2>
                 <h4 class='product-desc'>$description</h4>
             </div>
-            <button class='bouton-panier'>
-                <h2>Ajouter au panier</h2>
-            </button>
-            
+            <a>
+                <button class='bouton-panier'>
+                    Ajouter au panier
+                </button>
+            </a>
         </div>
     </div>");
     }

@@ -30,10 +30,11 @@
         <img src="../../../images/grange.png">
         <img src="../../../images/angle-droit.png" alt="flèche droite">
         </div>
-        <div class="cowbutton">
-        <a href="ajouter_grange.php"><button class="buttonaj">Ajouter</button></a>  
-        <h3>Grange 1</h3>
-        <a href="supprimer_grange.php"><button class="buttonsup">Supprimer</button></a>  </div>
+            <div class="cowbutton">
+            <a href="ajouter_grange.php"><button class="buttonaj">Ajouter</button></a>  
+            <h3>Grange 1</h3>
+        <a href="supprimer_grange.php"><button class="buttonsup">Supprimer</button></a>  
+        
 </main>
 
 <?php include("../../footer/footer.php"); ?>
