@@ -1,7 +1,7 @@
 
 
 <?php
-     $connected = true;
+     $connected = false;
 ?>
 
 <div>
@@ -11,7 +11,8 @@
         <div class = "header-title-div">
             <a class ="label-title" href="../general/index.php">Accueil</a>  
             <a class ="label-title" href="../boutique/boutique.php">Boutique</a>  
-            <ul class="menu">Mon espace
+            <ul class="menu">
+                <h6>Mon espace</h6>
                 <div class="dropdown">
                     <?php
                         if($connected){
