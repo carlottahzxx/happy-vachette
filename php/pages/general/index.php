@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Accueil</title>
+    <title>Accueil - Happy Vachette</title>
     <link rel="stylesheet" href="../../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,21 +62,21 @@
       <h2>Client</h2>
       <p>De nombreux éleveurs nous font confiance !</p>
     </figcaption>
-    <a href="#"></a><img class="image-vachette" src="../../../images/vachette.jpg" alt="sample45" />
+    <a href="#"></a><img class="image-vachette" src="../../../images/clients.jpeg" alt="sample45" />
   </figure>
   <figure class="snip1482">
     <figcaption>
       <h2>Capteurs</h2>
       <p>Les capteurs sont super.</p>
     </figcaption>
-    <a href="#"></a><img class="image-vachette" src="../../../images/vachette.jpg" alt="sample59" />
+    <a href="#"></a><img class="image-vachette" src="../../../images/capteur.jpeg" alt="sample59" />
   </figure>
   <figure class="snip1482">
     <figcaption>
       <h2>Résultats</h2>
       <p>Des résultats toop.</p>
     </figcaption>
-    <a href="#"></a><img class="image-vachette"  src="../../../images/vachette.jpg" alt="sample60" />
+    <a href="#"></a><img class="image-vachette"  src="../../../images/success.jpeg" alt="sample60" />
   </figure>
 </div>
 

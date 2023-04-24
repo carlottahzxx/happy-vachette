@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Accueil</title>
+    <title>HV - Vaches</title>
     <link rel="stylesheet" href="../../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,16 +22,24 @@
 <main>
     <h1>Vaches</h1>
 </main>
-
+<div class="pasdinspi">
+<div class="titre_vache">
     Température
+</div>
+<div class="titre_vache">
     Fréquence cardiaque
+</div>
+    <div class="titre_vache">
     Taux d'humidité
+</div>
+</div>
     <div class="flèche"><img src="../../../images/angle-gauche.png" alt="flèche gauche">
         <img src="../../../images/vachettemimi.png">
         <img src="../../../images/angle-droit.png" alt="flèche droite">
         </div>
         <div class="cowbutton">
-        <a href="ajouter_vache.php"><button type="button">Ajouter</button></a>  
+        <a href="ajouter_vache.php"><button type="button">Ajouter</button></a> 
+         
         <h3>Vache 1</h3>
         <a href="supprimer_vache.php"><button type="button">Supprimer</button></a>  </div>
 
