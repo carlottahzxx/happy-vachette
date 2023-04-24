@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Accueil</title>
+    <title>Mon espace - HV</title>
     <link rel="stylesheet" href="../../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,13 @@
 
         <main>
 
-            <h1> Mon espace</h1>
+            <h1> Mon compte</h1>
+
+
+            Informations personnelles
+            Mes achats
+            Paramètres
+            Déconnexion
         </main>
 
    

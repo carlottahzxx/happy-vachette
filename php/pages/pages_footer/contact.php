@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Accueil</title>
+    <title>HV - Contact</title>
     <link rel="stylesheet" href="../../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,12 @@
 
 <?php include("../../header/header.php") ?> 
     <main>
-        <h1>Nouvelle question</h1>
-        <div>Adresse e-mail:</div>
-        <div>Question:</div>
-        <a href="https://www.instagram.com/happyyvachette/"><img src="../../../images/instagram.png" alt="instagram"/></p></a>
+        <h1>Nous contacter</h1>
+        <h2>Adresse e-mail:<input type="email"id="email"></h2>
+        <label for="question"><h2>Question :</h2></label>
+        <textarea id="question" name="adresse" rows="5" cols="25"></textarea><br>
+ 
+        <a class="logo_insta" href="https://www.instagram.com/happyyvachette/"><img src="../../../images/instagram.png" alt="instagram"/></p></a>
 
 
     </main>
