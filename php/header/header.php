@@ -16,32 +16,32 @@
                 <div class="dropdown">
                     <?php
                         if($connected){
-                            echo '<li><a href="../../pages/general/grange.php">Granges</a></li>
-                            <li><a href="../../pages/vaches/vaches.php">Vaches</a></li>
-                            <li><a href="../../pages/general/colliers.php">Colliers</a></li>';
+                            echo '<a class ="label-title" href="../../pages/general/grange.php">Granges</a>
+                            <a class ="label-title" href="../../pages/vaches/vaches.php">Vaches</a>
+                            <a class ="label-title" href="../../pages/general/colliers.php">Colliers</a>';
                         }else{
-                            echo '<li><a href="#">Connectez vous</a></li>';
+                            echo '<a href="#">Connectez vous</a>';
                         }
                     ?>
-                </div>
-            </ul>   
-        </div>
+    </nav>
+        <a class="logo2" href="../../pages/general/index.php"><img src="../../../images/green_hv_logo.png" alt="logo" /></a> 
+        
+
+
+
         <?php
            
             if($connected){
-                echo '<a class = "logo-notif" href="../../authentification/connexion.php"> <img src="../../../images/notif.png" alt="logo-notif" /></a>';
+                echo '
+                <a class = "logo-notif"  onclick="openConForm()"> 
+                <img src="../../../images/notif.png" alt="logo-notif" /></a>';
             }
 
-            echo '<a class = "logo-connect" href="../../authentification/connexion.php"> <img src="../../../images/compte.png" alt="logo-connect" /></a>
-            </header>';
+            echo '<a class = "logo-connect"  onclick="openConForm()"> 
+            <img src="../../../images/compte.png" alt="logo-compte" /></a>';
+         
+            include("connexion.php");    
 
-            if($connected){
-                echo '<hr style="margin-left : 19%; margin-right:2%;">';
-            }else{
-                echo '<hr style="margin-left : 24%; margin-right:3%;">';
-            }
-                
         ?>
         
-    
 </div>

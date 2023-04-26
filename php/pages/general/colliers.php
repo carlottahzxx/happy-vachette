@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Accueil</title>
+    <title>Colliers - HV</title>
     <link rel="stylesheet" href="../../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,15 +24,15 @@
     <h1>Colliers</h1>
 </main>
 
-    <div><img src="../../../images/angle-gauche.png" alt="flèche gauche">
-        Collier 1 associé à la vache 1
+<div class="flèche"><img src="../../../images/angle-gauche.png" alt="flèche gauche">
+        <img src="../../../images/collier.webp">
         <img src="../../../images/angle-droit.png" alt="flèche droite">
         </div>
-        <a href="ajouter_collier.php">Ajouter</a>  
+        <div class="cowbutton">
+        <a href="ajouter_collier.php"><button type="button">Ajouter</button></a>  
         <h3>Collier 1</h3>
-        <a href="supprimer_collier.php">Supprimer</a>  
-
-
+        <a href="supprimer_collier.php"><button type="button">Supprimer</button></a>  
+</div>
 
 
 
