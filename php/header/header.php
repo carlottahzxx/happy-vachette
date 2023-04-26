@@ -1,7 +1,7 @@
 
 
 <?php
-     $connected = false;
+     $connected = true;
 ?>
 
 <div>
