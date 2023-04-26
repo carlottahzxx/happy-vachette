@@ -29,7 +29,8 @@
                 <h3>HAPPY VACHETTE ET SES COLLIERS</h3>
             
                 <div class = "description-text">
-                    <p><br>Notre équipe est composée de six étudiants de l’ISEP <span class="ma-classe">surmotivés</span>
+                    <p><br>Notre équipe est composée de six étudiants de l’ISEP 
+                    <span class="ma-classe">surmotivés</span>
                                 pour améliorer les conditions de vie des animaux d’élevages 
                                 en particulier les vaches.</p>
                 </div>

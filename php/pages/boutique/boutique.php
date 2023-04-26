@@ -18,20 +18,20 @@
         
 
         <main>
-        <h1>Boutique</h1>
+            <h1>Boutique</h1>
 
-        <div class="product-list">
-        <?php require __DIR__ . '/produit.php';
+            <div class="product-list">
+                <?php require __DIR__ . '/produit.php';
 
 
-         product("Collier","10.99$","collier_hv.png");
+                product("Collier","10.99$","collier_hv.png");
 
-         product("Stylo","7.99$","stylo_hv.png");
-         
-         product("Bob Happy Vachette","15.99$","bob_hv.png");
+                product("Stylo","7.99$","stylo_hv.png");
+                
+                product("Bob Happy Vachette","15.99$","bob_hv.png");
 
-         ?>
-         </div>
+                ?>
+            </div>
         </main>
 
     <?php include("../../footer/footer.php"); ?>
