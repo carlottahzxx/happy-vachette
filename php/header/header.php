@@ -5,7 +5,7 @@
 ?>
 
 <div>
-    <header class="header">
+<header class="header">
         <a class="logo2" href="../../pages/general/index.php"><img src="../../../images/green_hv_logo.png" alt="logo" /></a> 
         
         <div class = "header-title-div">
@@ -16,17 +16,16 @@
                 <div class="dropdown">
                     <?php
                         if($connected){
-                            echo '<a class ="label-title" href="../../pages/general/grange.php">Granges</a>
-                            <a class ="label-title" href="../../pages/vaches/vaches.php">Vaches</a>
-                            <a class ="label-title" href="../../pages/general/colliers.php">Colliers</a>';
+                            echo '<li><a href="../../pages/general/grange.php">Granges</a></li>
+                            <li><a href="../../pages/vaches/vaches.php">Vaches</a></li>
+                            <li><a href="../../pages/general/colliers.php">Colliers</a></li>';
                         }else{
-                            echo '<a href="#">Connectez vous</a>';
+                            echo '<li><a href="#">Connectez vous</a></li>';
                         }
                     ?>
-    </nav>
-        <a class="logo2" href="../../pages/general/index.php"><img src="../../../images/green_hv_logo.png" alt="logo" /></a> 
-        
-
+                </div>
+            </ul>   
+        </div>
 
 
         <?php
