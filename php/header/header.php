@@ -1,7 +1,7 @@
 
 
 <?php
-     $connected = true;
+     $connected = false;
 ?>
 
 <div>
@@ -20,7 +20,7 @@
                             <li><a href="../../pages/vaches/vaches.php">Vaches</a></li>
                             <li><a href="../../pages/general/colliers.php">Colliers</a></li>';
                         }else{
-                            echo '<li><a href="#">Connectez vous</a></li>';
+                            echo '<li><a onclick="openConForm()">Connectez vous</a></li>';
                         }
                     ?>
                 </div>

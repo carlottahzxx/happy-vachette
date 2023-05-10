@@ -2,7 +2,7 @@
 
 <div class="login-popup">
     <div class="form-popup" id="conForm">
-        <form action="/action_page.php" class="form-container">
+        <form action="../general/index.php" class="form-container">
              <a class = "croix" onclick="closeForms()"> <img src="../../../images/traverser.png" /></a>
              <div class="form-title">Connexion</div>
 
@@ -19,7 +19,7 @@
     </div>
 
     <div class="form-popup" id="insForm">
-        <form action="/action_page.php" class="form-container">
+        <form action="../general/index.php" class="form-container">
              <a class = "croix" onclick="closeForms()"> <img src="../../../images/traverser.png" /></a>
             <div class="form-title">Inscription</div>
             <input type="text" id="firstName" placeholder="Votre nom" name="name" required />

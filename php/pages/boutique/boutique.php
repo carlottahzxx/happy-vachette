@@ -24,12 +24,17 @@
                 <?php require __DIR__ . '/produit.php';
 
 
-                product("Collier","10.99$","collier_hv.png");
+                product("Collier","10.99€","collier_hv.png");
 
-                product("Stylo","7.99$","stylo_hv.png");
+                product("Capteur cardiaque","12.00€","capteur.png");
                 
-                product("Bob Happy Vachette","15.99$","bob_hv.png");
+                product("Capteur CO2","12.00€","capteur.png");
 
+                product("Capteur son","12.00€","capteur.png");
+                
+                product("Capteur température","12.00€","capteur.png");
+
+                product("Produit test","100.00€","capteur.png");
                 ?>
             </div>
         </main>
