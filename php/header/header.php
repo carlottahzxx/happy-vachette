@@ -1,7 +1,7 @@
 
 
 <?php
-     $connected = false;
+     $connected = true;
 ?>
 
 <div>
@@ -39,8 +39,16 @@
             echo '<a class = "logo-connect"  onclick="openConForm()"> 
             <img src="../../../images/compte.png" alt="logo-compte" /></a>';
          
-            include("connexion.php");    
-
+           
         ?>
+        <div class="login-popup">
+            <?php include("../../authentification/server.php");?>
+            <?php include("../../authentification/connexion.php");?>
+            <?php include("../../authentification/inscription.php");?>
+
+          
+
+    
+        </div>
         
 </div>

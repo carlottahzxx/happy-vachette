@@ -1,45 +1,22 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8"/>
-    <title>Accueil</title>
-    <link rel="stylesheet" href="../../css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-</head>
+<header>
 
+</header>
+<div class="form-popup" id="insForm">
+    <form class="form-container" method="post"> 
+            <a class = "croix" href ="index.php"> <img src="../../../images/traverser.png" /></a>
+        <div class="form-title">Inscription</div>
+        <?php include("errors.php");?>
+        <input type="text" id="firstName" placeholder="Votre prenom" name="name" required />
+        <input type="text" id="name" placeholder="Votre nom" name="familyName" required />
+        <input type="text" id="insEmail" placeholder="Votre Email" name="email" required />
+        <input type="password" id="insPsw" placeholder="Votre Mot de passe" name="psw" required/> 
+        <input type="password" id="confpsw" placeholder="Confirmer le mot de passe" name="confpsw" required/> 
+        <input type="checkbox" id="cgu" required/>J'accepte les<a href="../pages/general/CGU.php">CGU</a>
+        <button type="submit" class="btn" name="register">S inscrire</button>
 
-<body>
-    <main>
-        <h1>
-            INSCRIPTION
-            <a href="../pages/general/index.php"><img src="../../images/traverser.png" alt="retour"></a>
+        Déjà un compte ? 
+        <a class = "inscription"  onclick="openConForm()">Connectez-vous</a>
 
-        </h1>
-        
-    <section>
-        <form action="" method="get">
-            <label for="prenom">Votre prénom</label>
-            <input type="text" name="prenom" id="prenom" required>
-            <label for="nom">Votre nom</label>
-            <input type="text" name="nom" id="nom" required>
-            <label for="email">Votre email</label>
-            <input type="email" name="email" id="email" required>
-            <label for="motdepasse">Votre mot de passe</label>
-            <input type="password" name="motdepasse" id="motdepasse" required>
-            <label for="checkbox">J'accepte les <a class = "inscription-text" href="../pages/general/CGU.php">CGU</a> </label>
-            <input id="checkbox" name="checkbox" type="checkbox" required>
-        <input type="submit" value="S'inscrire" />
-        </form>
-    </section>
-<section>Déjà un compte ? 
-        <a href="connexion.php">Connectez-vous</a> 
-</section>
-    </main>
-</body>
-</html>
+    </form> 
+</div>

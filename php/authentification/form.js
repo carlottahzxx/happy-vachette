@@ -9,6 +9,8 @@ function openInsForm() {
 }
 
 function closeForms() {
-    document.getElementById("insForm").style.display = "none";
-    document.getElementById("conForm").style.display = "none";
+    if(count($errors)===0){
+        document.getElementById("insForm").style.display = "none";
+        document.getElementById("conForm").style.display = "none";
+    }
 }
