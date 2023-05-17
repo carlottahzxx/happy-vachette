@@ -9,8 +9,17 @@ function openInsForm() {
 }
 
 function closeForms() {
-    if(count($errors)===0){
-        document.getElementById("insForm").style.display = "none";
-        document.getElementById("conForm").style.display = "none";
-    }
+
+    document.getElementById("insForm").style.display = "none";
+    document.getElementById("conForm").style.display = "none";
+    
+}
+
+function reset(){
+    document.getElementById("insForm").style.display = "none";
+    document.getElementById("conForm").style.display = "none";
+    const p = document.getElementById('errorText');
+    p.innerText = "";
+    const p2 = document.getElementById('errorConText');
+    p2.innerText = "";
 }

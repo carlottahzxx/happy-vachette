@@ -3,10 +3,10 @@
 
 </header>
 <div class="form-popup" id="insForm">
-    <form class="form-container" method="post"> 
-            <a class = "croix" href ="index.php"> <img src="../../../images/traverser.png" /></a>
+    <form class="form-container" method="post" id="insForm"> 
+            <a class = "croix" onclick='reset()'> <img src="../../../images/traverser.png" /></a>
         <div class="form-title">Inscription</div>
-        <?php include("errors.php");?>
+        <p class="p-error" id='errorText'></p>
         <input type="text" id="firstName" placeholder="Votre prenom" name="name" required />
         <input type="text" id="name" placeholder="Votre nom" name="familyName" required />
         <input type="text" id="insEmail" placeholder="Votre Email" name="email" required />

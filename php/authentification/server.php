@@ -5,6 +5,7 @@
         $minuscule = false;
         $nombre = false;
         $charactere = false;
+        
         $nb = strlen($psw);
         
         $majArray = array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U",
@@ -36,44 +37,131 @@
         return ($majuscule && $minuscule) && ($charactere && $nombre);
 
     }
+
+    function firstNameFromMail($mail){
+        $db = mysqli_connect('localhost', 'root', 'root', 'happyvachette');
+        $query = "SELECT firstName FROM user WHERE mail='$mail'";
+        $result = mysqli_query($db,$query);
+        
+        return $result->fetch_row()[0];
+    }
+
+    function familyNameFromMail($mail){
+        $db = mysqli_connect('localhost', 'root', 'root', 'happyvachette');
+        $query = "SELECT familyName FROM user WHERE mail='$mail'";
+        $result = mysqli_query($db,$query);
+
+        return $result->fetch_row()[0];
+    }
+
+
 ?>
 
 <?php
+session_start();
+
+if(isset($_SESSION['email'])){
+    $sessionEmail = $_SESSION['email'];
+}else{
+    $sessionEmail = "";
+}
 
 
 
-session_abort();
 
 $name ="";
 $familyName = "";
-$email = "";
 $psw = "";
+$email = "";
 $confpsw = "";
 $errors = array();
-$db = mysqli_connect('localhost', 'root', 'root', 'happy_vachette');
+$db = mysqli_connect('localhost', 'root', 'root', 'happyvachette');
+
+
+if(isset($_POST['login'])){
+    $email = mysqli_real_escape_string($db, $_POST['email']);
+    $psw = mysqli_real_escape_string($db, $_POST['psw']);
+
+    $conn_check = "SELECT * FROM user WHERE mail='$email' AND pswd='$psw'";
+    $result = mysqli_query($db,$conn_check);
+    $can_conn = mysqli_fetch_assoc($result);
+
+    if($can_conn){
+        $_SESSION['email'] = $email;
+        $name = firstNameFromMail($email);
+        $lastName = familyNameFromMail($email);
+        echo("$name $lastName");
+        
+    }else{
+        echo("<script>openConForm();
+                setConError('Email or password incorrect');
+                </script>");
+    }
+
+    
+
+}
+
 
 if(isset($_POST['register'])){
     $name = mysqli_real_escape_string($db, $_POST['name']);
     $familyName = mysqli_real_escape_string($db, $_POST['familyName']);
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $psw = mysqli_real_escape_string($db, $_POST['psw']);
-    $confpsw = mysqli_real_escape_string($db, $_POST['confpsw']);       
+    $confpsw = mysqli_real_escape_string($db, $_POST['confpsw']);
+
+
+    if($psw!=="" && $email!==""){
+
+        $email_check = "SELECT * FROM user WHERE mail='$email'";
+        $result = mysqli_query($db,$email_check);
+        $email_exist = mysqli_fetch_assoc($result);
+
+
+        if(!validPsw($psw)){
+            array_push($errors,'error');
+            echo("<script>openInsForm();
+            setInsError('Password must contain at least a lower AND upper case letter, a number and a special character');
+            </script>");
+        }
+        
+        if($psw != $confpsw){
+            array_push($errors,'error');
+            echo("<script>openInsForm();
+            setInsInsError('The two passwords have to match');
+            </script>");
+        }
+
+        if(strlen($psw)<6){
+            array_push($errors,'error');
+            echo("<script>openInsForm();
+            setInsError('Password must contain at least 7 characters');
+            </script>");
+        }
+        
+        if($email_exist){
+            array_push($errors,'error');
+            if($email !== $sessionEmail){
+                echo("<script>openInsForm();
+                setInsError('An account already exists with this email');
+                </script>");
+            }
+    
+        }
+
+        if(count($errors)==0){
+            $query = "INSERT INTO user (mail, pswd,familyName,firstName,administrator)
+            VALUES ('$email','$psw','$familyName','$name',0)";
+            $_SESSION['email'] = $email;
+            $sessionEmail = $email;
+            mysqli_query($db, $query);
+        
+            echo $sessionEmail;
+        }
+
+    }
 }
 
-if($psw != $confpsw){
-    array_push($errors,"The two passwords do not match");
-}
-
-if(!validPsw($psw)){
-    array_push($errors,"Passwt conord mustain at least a lower AND upper case letter, a number and a special characters");
-}
-
-if(count($errors)==0){
-    $query = "INSERT INTO user (userId, mail, pswd, administrator, firstName, familyName)
-    VALUES (1,'$email','$psw',0,'$name','$familyName')";
-
-    mysqli_query($db, $query);
-}
 
 
 ?>

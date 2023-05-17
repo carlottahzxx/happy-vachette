@@ -749,3 +749,8 @@ justify-content: end;
 .grange{
    width: 30em; 
 }
+
+.p-error{
+    color: #cc0000;
+    font-size: 1.2vw;
+}

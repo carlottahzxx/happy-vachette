@@ -42,10 +42,13 @@
            
         ?>
         <div class="login-popup">
-            <?php include("../../authentification/server.php");?>
+           
+
+            
             <?php include("../../authentification/connexion.php");?>
             <?php include("../../authentification/inscription.php");?>
-
+            <?php include("../../authentification/server.php");?>
+            
           
 
     

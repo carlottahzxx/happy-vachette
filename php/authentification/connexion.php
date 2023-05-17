@@ -1,10 +1,10 @@
 
 
 <div class="form-popup" id="conForm">
-    <form class="form-container" action="javascript:void(0);"  method="post">
-            <a class = "croix"  href ="index.php"> <img src="../../../images/traverser.png" /></a>
+    <form class="form-container" method="post">
+            <a class = "croix"  onclick='reset()'> <img src="../../../images/traverser.png" /></a>
             <div class="form-title">Connexion</div>
-
+            <p class='p-error' id='errorConText'></p>
         <input type="text" id="conEmail" placeholder="Votre Email" name="email" required />
         <input type="password" id="conPsw" placeholder="Votre Mot de passe" name="psw" required/> 
 
