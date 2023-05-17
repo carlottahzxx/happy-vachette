@@ -1,7 +1,7 @@
 
 
 <div class="form-popup" id="conForm">
-    <form class="form-container" method="post">
+    <form action="../general/index.php" class="form-container" method="post">
             <a class = "croix"  onclick='reset()'> <img src="../../../images/traverser.png" /></a>
             <div class="form-title">Connexion</div>
             <p class='p-error' id='errorConText'></p>

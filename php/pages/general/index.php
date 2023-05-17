@@ -17,6 +17,18 @@
     
 </head>
 
+<?php
+    session_start();
+
+    $connected = isset($_SESSION['email']);
+    
+    if(isset($_GET['disconnect'])){
+        session_destroy();
+        $connected = false;
+    }
+
+
+?>
 
 <body>
     

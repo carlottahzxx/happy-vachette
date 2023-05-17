@@ -3,7 +3,7 @@
 
 </header>
 <div class="form-popup" id="insForm">
-    <form class="form-container" method="post" id="insForm"> 
+    <form action="../general/index.php" class="form-container" method="post" id="insForm"> 
             <a class = "croix" onclick='reset()'> <img src="../../../images/traverser.png" /></a>
         <div class="form-title">Inscription</div>
         <p class="p-error" id='errorText'></p>

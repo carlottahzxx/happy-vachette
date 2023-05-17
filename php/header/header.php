@@ -1,9 +1,5 @@
 
 
-<?php
-     $connected = true;
-?>
-
 <div>
 <header class="header">
         <a class="logo2" href="../../pages/general/index.php"><img src="../../../images/green_hv_logo.png" alt="logo" /></a> 
@@ -15,6 +11,7 @@
                 <h6>Mon espace</h6>
                 <div class="dropdown">
                     <?php
+                        
                         if($connected){
                             echo '<li><a href="../../pages/general/grange.php">Granges</a></li>
                             <li><a href="../../pages/vaches/vaches.php">Vaches</a></li>
@@ -29,6 +26,7 @@
 
 
         <?php
+           
            
             if($connected){
                 echo '
@@ -47,11 +45,36 @@
             
             <?php include("../../authentification/connexion.php");?>
             <?php include("../../authentification/inscription.php");?>
-            <?php include("../../authentification/server.php");?>
+            <?php 
+                include("../../authentification/server.php");
+                if($connected){
+                    $name = $_SESSION['firstName'];
+                    $familyName = $_SESSION['familyName'];
+                    echo("$name $familyName");
+                }
+
+                if(count($insErrors)!=0){
+                    $error = $insErrors[0];
+                    echo("<script>openInsForm();
+                setInsError('$error');
+                </script>");
+                }
+
+                if(count($conErrors)!=0){
+                    $error = $conErrors[0];
+                    echo("<script>openConForm();
+                setConError('$error');
+                </script>");
+                }
+
+
+            ?>
+
+           
             
           
 
-    
-        </div>
         
+        </div>
+        <a href="../../pages/general/index.php?disconnect=true" >disconnect</a>
 </div>

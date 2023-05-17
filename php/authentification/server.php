@@ -58,7 +58,7 @@
 ?>
 
 <?php
-session_start();
+
 
 if(isset($_SESSION['email'])){
     $sessionEmail = $_SESSION['email'];
@@ -74,7 +74,8 @@ $familyName = "";
 $psw = "";
 $email = "";
 $confpsw = "";
-$errors = array();
+$insErrors = array();
+$conErrors = array();
 $db = mysqli_connect('localhost', 'root', 'root', 'happyvachette');
 
 
@@ -87,15 +88,15 @@ if(isset($_POST['login'])){
     $can_conn = mysqli_fetch_assoc($result);
 
     if($can_conn){
-        $_SESSION['email'] = $email;
         $name = firstNameFromMail($email);
         $lastName = familyNameFromMail($email);
-        echo("$name $lastName");
+        $_SESSION['email'] = $email;
+        $_SESSION['firstName'] = $name;
+        $_SESSION['familyName'] = $lastName;
+        $connected = true;
         
     }else{
-        echo("<script>openConForm();
-                setConError('Email or password incorrect');
-                </script>");
+        array_push($conErrors,"Email or password incorrect");
     }
 
     
@@ -119,44 +120,38 @@ if(isset($_POST['register'])){
 
 
         if(!validPsw($psw)){
-            array_push($errors,'error');
-            echo("<script>openInsForm();
-            setInsError('Password must contain at least a lower AND upper case letter, a number and a special character');
-            </script>");
+            array_push($insErrors,'Password must contain at least a lower AND upper case letter, a number and a special character');
+            
         }
         
         if($psw != $confpsw){
-            array_push($errors,'error');
-            echo("<script>openInsForm();
-            setInsInsError('The two passwords have to match');
-            </script>");
+            array_push($insErrors,'The two passwords have to match');
+            
         }
 
         if(strlen($psw)<6){
-            array_push($errors,'error');
-            echo("<script>openInsForm();
-            setInsError('Password must contain at least 7 characters');
-            </script>");
+            array_push($insErrors,'Password must contain at least 7 characters');
+            
         }
         
         if($email_exist){
-            array_push($errors,'error');
             if($email !== $sessionEmail){
-                echo("<script>openInsForm();
-                setInsError('An account already exists with this email');
-                </script>");
+                array_push($insErrors,'An account already exists with this email');
+                
             }
     
         }
 
-        if(count($errors)==0){
+        if(count($insErrors)==0){
             $query = "INSERT INTO user (mail, pswd,familyName,firstName,administrator)
             VALUES ('$email','$psw','$familyName','$name',0)";
             $_SESSION['email'] = $email;
+            $_SESSION['firstName'] = $name;
+            $_SESSION['familyName'] = $familyName;
+            $connected = true;
             $sessionEmail = $email;
             mysqli_query($db, $query);
-        
-            echo $sessionEmail;
+           
         }
 
     }
