@@ -12,6 +12,8 @@
         </div>
   
                 <a class ="label-title" href="../general/index.php">Accueil</a>  
+                <a class ="label-title" href="../general/mon_espace.php">Mon espace</a>  
+
 
                 <a class ="label-title" href="../boutique/boutique.php">Boutique</a>  
 

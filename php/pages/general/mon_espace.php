@@ -25,7 +25,9 @@
             Informations personnelles
             Mes achats
             Paramètres
-            Déconnexion
+            <button>Déconnexion</button>
+
+            
         </main>
 
    

@@ -83,24 +83,24 @@
 
 
         <div class="botom-section">
-            <div class="portrait-antoine">
+            <div class="portrait-antoine"><img class="image-vachette"  src="../../../images/antoine.jpeg" alt="sample60" />
                 <footer class = "middle-section-footer">Antoine</footer>
             </div>
-            <div class="portrait-antoine">
+            <div class="portrait-antoine"><img class="image-vachette"  src="../../../images/maxence.jpeg" alt="sample60" />
                 <footer class = "middle-section-footer">Maxence</footer>
             </div>
-            <div class="portrait-antoine">
+            <div class="portrait-antoine"><img class="image-vachette"  src="../../../images/léonard.jpeg" alt="sample60" />
                 <footer class = "middle-section-footer">Léonard</footer>
             </div>
         </div>
         <div class = "botom-section"> 
-            <div class="portrait-antoine">
+            <div class="portrait-antoine"><img class="image-vachette"  src="../../../images/carlotta.jpeg" alt="sample60" />
                 <footer class = "middle-section-footer">Carlotta</footer>
             </div>
-            <div class="portrait-antoine">
+            <div class="portrait-antoine"><img class="image-vachette"  src="../../../images/daniel.jpeg" alt="sample60" />
                 <footer class = "middle-section-footer">Daniel</footer>
             </div>
-            <div class="portrait-antoine">
+            <div class="portrait-antoine"><img class="image-vachette"  src="../../../images/lea.jpeg" alt="sample60" />
                 <footer class = "middle-section-footer">Léa</footer>
             </div>
         </div>  
