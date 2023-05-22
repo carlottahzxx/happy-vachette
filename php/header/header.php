@@ -39,9 +39,9 @@
                     <?php
                         
                         if($connected){
-                            echo '<li><a href="../../pages/general/grange.php">Granges</a></li>
+                            echo '<li><a href="../../pages/granges/grange.php">Granges</a></li>
                             <li><a href="../../pages/vaches/vaches.php">Vaches</a></li>
-                            <li><a href="../../pages/general/colliers.php">Colliers</a></li>';
+                            <li><a href="../../pages/colliers/colliers.php">Colliers</a></li>';
                         }else{
                             echo '<li><a onclick="openConForm()">Connectez vous</a></li>';
                         }
@@ -82,6 +82,7 @@
         if($connected){
             $name = $_SESSION['firstName'];
             $familyName = $_SESSION['familyName'];
+            $email = $_SESSION['email'];
             echo("<div class='below-header'>
                     <div class='connection-info'>
                         <h6>$name $familyName</h6>");
