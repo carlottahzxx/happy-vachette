@@ -57,6 +57,7 @@ hr{
 
 .logo-connect{
     width: 6vw;
+    height: 6vw;
 }
 
 .logo-connect img{
@@ -64,8 +65,55 @@ hr{
     width: 100%;
 }
 
+.header-connect-div{
+    display:flex;
+    align-items: center;
+}
+
+.below-header{
+    display: flex;
+    justify-content:  end;
+    margin-top: -3vw;
+    
+}
+
+.below-header h6{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw;
+    justify-content: start;
+    font-weight: normal;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.below-header a{
+    color: rgb(95, 95, 95);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw;
+    justify-content: start;
+    font-weight: normal;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    text-decoration: none;
+    margin-top: 3px;
+}
+
+.below-header a:hover{
+    text-decoration: underline;
+}
+
+.connection-info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
 .logo-notif{
     width: 7vw;
+    height: 7vw;
 }
 
 .logo-notif img{

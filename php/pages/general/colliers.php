@@ -11,8 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="../../authentification/form.js"></script>
+    <script src="../../authentification/customSubmit.js"></script>
 </head>
 
+<?php
+    session_start();
+
+    $connected = isset($_SESSION['email']);
+
+?>
 
 <body>
 

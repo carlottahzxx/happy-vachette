@@ -2,6 +2,32 @@
 
 <div>
 <header class="header">
+        <div class="login-popup">
+        
+           <?php include("../../authentification/connexion.php");?>
+           <?php include("../../authentification/inscription.php");?>
+           <?php 
+               include("../../authentification/server.php");
+
+               if(count($insErrors)!=0){
+                   $error = $insErrors[0];
+                   echo("<script>openInsForm();
+               setInsError('$error');
+               </script>");
+               }
+
+               if(count($conErrors)!=0){
+                   $error = $conErrors[0];
+                   echo("<script>openConForm();
+               setConError('$error');
+               </script>");
+               }
+
+
+           ?>
+       
+       </div>
+
         <a class="logo2" href="../../pages/general/index.php"><img src="../../../images/green_hv_logo.png" alt="logo" /></a> 
         
         <div class = "header-title-div">
@@ -30,51 +56,39 @@
            
             if($connected){
                 echo '
-                <a class = "logo-notif"  onclick="openConForm()"> 
-                <img src="../../../images/notif.png" alt="logo-notif" /></a>';
+                <div class="header-connect-div">
+                    <a class = "logo-notif"  onclick="openConForm()"> 
+                    <img src="../../../images/notif.png" alt="logo-notif" /></a>';
+                    
+
+                    echo '
+                    <a class = "logo-connect"  onclick="openConForm()"> 
+                    <img src="../../../images/compte.png" alt="logo-compte" /></a> 
+                    
+                </div>';
+                
+            }else{
+                echo '<a class = "logo-connect"  onclick="openConForm()"> 
+            <img src="../../../images/compte.png" alt="logo-compte" /></a>';
             }
 
-            echo '<a class = "logo-connect"  onclick="openConForm()"> 
-            <img src="../../../images/compte.png" alt="logo-compte" /></a>';
+            
          
            
         ?>
-        <div class="login-popup">
-           
-
-            
-            <?php include("../../authentification/connexion.php");?>
-            <?php include("../../authentification/inscription.php");?>
-            <?php 
-                include("../../authentification/server.php");
-                if($connected){
-                    $name = $_SESSION['firstName'];
-                    $familyName = $_SESSION['familyName'];
-                    echo("$name $familyName");
-                }
-
-                if(count($insErrors)!=0){
-                    $error = $insErrors[0];
-                    echo("<script>openInsForm();
-                setInsError('$error');
-                </script>");
-                }
-
-                if(count($conErrors)!=0){
-                    $error = $conErrors[0];
-                    echo("<script>openConForm();
-                setConError('$error');
-                </script>");
-                }
-
-
-            ?>
-
-           
-            
-          
-
         
-        </div>
-        <a href="../../pages/general/index.php?disconnect=true" >disconnect</a>
+    </header>
+    <?php
+        if($connected){
+            $name = $_SESSION['firstName'];
+            $familyName = $_SESSION['familyName'];
+            echo("<div class='below-header'>
+                    <div class='connection-info'>
+                        <h6>$name $familyName</h6>");
+                        echo('<a href="../../pages/general/index.php?disconnect=true" >Disconnect</a>
+                    </div>
+                </div>');
+        }
+        
+    ?>
 </div>
