@@ -1,4 +1,6 @@
 
+
+
 <div class="footer-div">
         <footer class = "footer">
                 <div class = "contacts">
@@ -10,9 +12,10 @@
 
 
                 
- 
+
         Happy Vachette - Tous droits réservés © 2023  
 
         </footer>
 </div>
+
 

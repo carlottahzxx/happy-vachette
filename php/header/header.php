@@ -57,12 +57,12 @@
             if($connected){
                 echo '
                 <div class="header-connect-div">
-                    <a class = "logo-notif"  onclick="openConForm()"> 
+                    <a class = "logo-notif"> 
                     <img src="../../../images/notif.png" alt="logo-notif" /></a>';
                     
 
                     echo '
-                    <a class = "logo-connect"  onclick="openConForm()"> 
+                    <a class = "logo-connect"> 
                     <img src="../../../images/compte.png" alt="logo-compte" /></a> 
                     
                 </div>';

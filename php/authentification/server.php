@@ -82,6 +82,7 @@ $db = mysqli_connect('localhost', 'root', 'root', 'happyvachette');
 if(isset($_POST['login'])){
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $psw = mysqli_real_escape_string($db, $_POST['psw']);
+    $psw = md5($psw);
 
     $conn_check = "SELECT * FROM user WHERE mail='$email' AND pswd='$psw'";
     $result = mysqli_query($db,$conn_check);
@@ -143,8 +144,11 @@ if(isset($_POST['register'])){
         }
 
         if(count($insErrors)==0){
+            $psw = md5($psw);
+
             $query = "INSERT INTO user (mail, pswd,familyName,firstName,administrator)
             VALUES ('$email','$psw','$familyName','$name',0)";
+
             $_SESSION['email'] = $email;
             $_SESSION['firstName'] = $name;
             $_SESSION['familyName'] = $familyName;
