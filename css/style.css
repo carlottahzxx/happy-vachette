@@ -562,4 +562,17 @@ h5{
 
 }
 
+.cgu-text{
+    font-size: 19px;
+}
+
+.cgu-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
 
