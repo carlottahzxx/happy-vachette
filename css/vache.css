@@ -1,0 +1,26 @@
+.flèche{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cowbutton{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.general-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.titre_vache{
+  
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}

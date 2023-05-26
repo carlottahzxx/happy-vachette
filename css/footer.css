@@ -1,0 +1,49 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-right: 10px;
+    
+    
+}
+
+.footer-div{
+    margin-top: 4vw;
+    background-color: #227043;
+    width: auto;
+    height: 63px;
+}
+
+.logo_insta{
+    display: flex;
+   justify-content: center; 
+}
+
+.footer-text{
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-text:hover{
+    text-decoration:underline;
+}
+
+.cgu-text{
+    font-size: 19px;
+}
+
+.cgu-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}

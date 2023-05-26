@@ -1,0 +1,20 @@
+.flèche{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cowbutton{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.p-error{
+    color: #cc0000;
+    font-size: 1.2vw;
+}

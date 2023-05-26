@@ -1,0 +1,285 @@
+
+body{
+    background-color: #B1CFB9;
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.login-popup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-45%, 5%);
+    border: 2px solid #666;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.form-container input[type="text"],
+
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #eee;
+}
+
+.form-title{
+    margin-bottom: 30px;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+   
+}
+
+.form-popup a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-container .btn {
+    background-color: #227043;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: #cc0000;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+input[type="email"]{
+    width: 50em;
+    border-radius: 15px;
+    height: 50px;
+    margin-left: 7em;
+    margin-right: 7em;
+  }
+
+textarea{
+    border-radius: 15px;
+    margin-left: 7em;
+    margin-right: 7em;
+    width: 50em;
+}
+
+.croix{
+display: flex;
+justify-content: end;
+
+}
+
+.croix img{
+    width: 1.3vw;   
+}
+
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.header-title-div{
+    display: flex;
+    align-items: left;
+    width: 60%;
+    padding: auto;
+}
+
+.label-title:hover{
+    color:#227043;
+}
+
+.logo2{
+    width: 15%;
+}
+
+.logo2 img{
+    margin-top: 12%;
+    height: 100%;
+    width: 100%;
+}
+
+.logo-connect{
+    width: 6vw;
+    height: 6vw;
+}
+
+.logo-connect img{
+    height: 100%;
+    width: 100%;
+}
+
+.header-connect-div{
+    display:flex;
+    align-items: center;
+}
+
+.below-header{
+    display: flex;
+    justify-content:  end;
+    margin-top: -3vw;
+    
+}
+
+.below-header h6{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw;
+    justify-content: start;
+    font-weight: normal;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.below-header a{
+    color: rgb(95, 95, 95);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw;
+    justify-content: start;
+    font-weight: normal;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    text-decoration: none;
+    margin-top: 3px;
+}
+
+.below-header a:hover{
+    text-decoration: underline;
+}
+
+.connection-info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.logo-notif{
+    width: 7vw;
+    height: 7vw;
+}
+
+.logo-notif img{
+    height: 100%;
+    width: 100%;
+}
+
+.label-title{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw;
+}
+
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw;
+}
+
+.menu :hover{
+    border: solid;
+    border-width: 0.17vw;
+}
+  
+.menu li {
+    display: none;
+    margin-top: 5px;
+    border: none;
+}
+
+.menu h6{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vw;
+    justify-content: start;
+    font-weight: normal;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+
+}
+
+.menu:hover div {
+    display: block;
+    border: solid;
+    border-width: 0.17vw;
+    margin-top: -2px;
+}
+
+.menu:hover li {
+    display: block;
+    border: none;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    border: none;
+   
+}
+.menu a:hover{
+    color: #227043;
+    border: none;
+}
+
+.dropdown{
+    position:absolute;
+    border-width: 1px;
+    border-color: #000000;
+    border: none;
+    width: 11.15vw;
+}
+
+.dropdown img{
+    margin-top: 300px;
+}
+
+
+.p-error{
+    color: #cc0000;
+    font-size: 1.2vw;
+}
+
+.mdp{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.5em;
+}
+
