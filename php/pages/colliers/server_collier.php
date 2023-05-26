@@ -13,5 +13,37 @@
         }
         return $nom_granges;
     }
+
+
+    if(isset($_POST['ajout-collier'])){
+        $grange = $_POST['selected-grange'];
+        $id_form =$_POST['id-collier'];
+        $query = "SELECT * FROM collier WHERE IdCollier='$id_form'";
+        $result = mysqli_query($db,$query);
+        $in_base = mysqli_fetch_assoc($result);
+        if($in_base){
+            if($id_form==''){
+
+            }else{
+                echo '<p class="erreur-ajout-collier">Erreur ce numéro de collier est déja assigné</p>';
+            }
+                
+        }else{
+            $query = "SELECT IdGrange FROM grange WHERE Nom = '$grange'";
+            $result = mysqli_query($db,$query);
+            $result = mysqli_fetch_assoc($result);
+            $id_grange = $result['IdGrange'];
+
+           
+
+            $query = "INSERT INTO collier (IdCollier,IdGrange) VALUES ('$id_form','$id_grange')";
+            mysqli_query($db, $query);
+            
+        }
+
+
+    }
+
+    
     
 ?>

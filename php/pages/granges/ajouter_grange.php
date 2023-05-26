@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8"/>
-    <title>Ajouter Colliers - HV</title>
+    <title>Ajouter Grange - HV</title>
     <link rel="stylesheet" href="../../../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,25 +28,19 @@
 <?php include("../../header/header.php");
     echo('
     </header>
-    <h1>Ajouter un collier</h1>
+    <h1>Ajouter une Grange</h1>
     ');
-    require __DIR__ . '/server_collier.php';
-    $nom_granges = request_granges($email,$db);
+    require __DIR__ . '/server_grange.php';
+    //nom_granges = request_granges($email,$db);
 
 ?> 
     
     
     <div>
-        <form method = "post" id="ajout-collier-form">
-            <select id="grange" name="selected-grange" required>
-                <?php 
-                    foreach($nom_granges as $nom){
-                        echo("<option value='$nom'>$nom</option>");
-                    }
-                ?>
-            </select>
-            <input type = "number" placeholder="Numéro du collier" name="id-collier" required></input>
-            <button type="submit" name="ajout-collier">Ajouter</button>
+        <form method = "post" id="ajout-grange-form">
+            <input type="text" name="nom-grange" placeholder="Nom" required/>
+            <input type="text" name="lieu-grange" placeholder="Lieu" required/>
+            <button type="submit" name="ajout-grange">Ajouter</button>
         </form>
 
     </div>
