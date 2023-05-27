@@ -7,7 +7,7 @@
            <?php include("../header/connexion.php");?>
            <?php include("../header/inscription.php");?>
            <?php 
-               include("../../controller/server.php");
+               include("../../controller/server_authentification.php");
 
                if(count($insErrors)!=0){
                    $error = $insErrors[0];

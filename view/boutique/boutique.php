@@ -34,18 +34,14 @@
             <div class="product-list">
                 <?php require __DIR__ . '/produit.php';
 
-
-                product("Collier","10.99€","collier_hv.png");
-
-                product("Capteur cardiaque","12.00€","capteur.png");
+                    require '../../controller/server_boutique.php';
                 
-                product("Capteur CO2","12.00€","capteur.png");
+                $items = productsRequest($db);
 
-                product("Capteur son","12.00€","capteur.png");
-                
-                product("Capteur température","12.00€","capteur.png");
+                foreach($items as $it){
+                    product($it['Nom'],$it['Prix']."€   ",$it['Image'],$it['Description']);
+                }
 
-                product("Produit test","100.00€","capteur.png");
                 ?>
             </div>
         </main>

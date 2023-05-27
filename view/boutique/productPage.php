@@ -20,7 +20,7 @@
     <body>
 
         <?php 
-            $name = $_GET['name'];
+            $productName = $_GET['productName'];
             $price = $_GET['price'];;
             $image = $_GET['image'];
             $description = $_GET['description'];
@@ -31,7 +31,7 @@
         <div>
             <?php require __DIR__ . '/productDetail.php';
                
-                product($name,$price,$image,$description);
+                product($productName,$price,$image,$description);
                 
             ?>
 

@@ -44,7 +44,7 @@
 </div>
 </div>
     <div class="flèche"><img src="../../images/angle-gauche.png" alt="flèche gauche">
-        <img src="../../images/grange.png">
+        <img class="image-grange" src="../../images/grange.png">
         <img src="../../images/angle-droit.png" alt="flèche droite">
         </div>
             <div class="cowbutton">
