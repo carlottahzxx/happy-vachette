@@ -1,4 +1,17 @@
 <?php
+
+    function grangesRequest($db){
+        $granges = [];
+        $query = "SELECT * FROM grange";
+        $result = mysqli_query($db,$query);
+        while ($row = mysqli_fetch_array($result)) {
+            array_push($granges,$row);
+        }
+        return $granges;
+    }
+
+
+    
     if(isset($_POST['ajout-grange'])){
         $nom = $_POST['nom-grange'];
         $lieu =$_POST['lieu-grange'];

@@ -4,7 +4,9 @@
 <head>
 <meta charset="utf-8"/>
     <title>Ajouter Grange - HV</title>
-    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/grange.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
@@ -30,8 +32,9 @@
     </header>
     <h1>Ajouter une Grange</h1>
     ');
+
     require '../../controller/server_grange.php';
-    //nom_granges = request_granges($email,$db);
+    
 
 ?> 
     

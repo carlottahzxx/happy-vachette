@@ -27,32 +27,27 @@
 <body>
 
     <header>
-    <?php include("../header/header.php") ?> 
+    <?php include("../header/header.php");
+        require "../granges/grange_element.php";
+        require "../../controller/server_grange.php";
+    ?> 
 
 
     </header>
 
-<main>
-    <h1>Granges</h1>
 
-<div class="grange-general-div">
-    <div class="titre_vache">
-    Taux de CO2
-</div>
-<div class="titre_vache">
-    Niveau sonore
-</div>
-</div>
-    <div class="flèche"><img src="../../images/angle-gauche.png" alt="flèche gauche">
-        <img class="image-grange" src="../../images/grange.png">
-        <img src="../../images/angle-droit.png" alt="flèche droite">
-        </div>
-            <div class="cowbutton">
-            <a href="ajouter_grange.php"><button class="buttonaj">Ajouter</button></a>  
-            <h3>Grange 1</h3>
-        <a href="supprimer_grange.php"><button class="buttonsup">Supprimer</button></a>  
-        
-</main>
+    <h1>Granges</h1>
+    <div class='grange-elem-wraper'>
+        <?php
+            $granges = grangesRequest($db);
+            foreach($granges as $g){
+                $g_nom = $g['Nom'];
+                echo("<a class='grange-elem' href='../colliers/colliers.php?grange=$g_nom'>");
+                grangeElem($g['Nom'],$g['Lieu'],"Co2","Son");
+                echo('</a>');
+            }
+        ?>
+    </div>
 
 <?php include("../footer/footer.php"); ?>
 

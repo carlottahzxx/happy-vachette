@@ -1,18 +1,33 @@
-<?php 
-    function grange($nom,$lieu,$co2,$son){
-        echo("<div
-         class='product-div'>
-            <a href='./productPage.php?name=$name&price=$price&image=$image&description=Description'
-             class='product-middle-div'>
-                <div class='product-image'>
-                    <img src='../../images/$image'/>
-                </div>
-                <div class='product-text'>
-                    <h2>$name</h2>
-                    <p>$price</p>
-                </div>
-            </a>
-        </div>");
-    }
+<?php
+    function grangeElem($nom,$lieu,$co2,$son){
+        echo("
+        <div class='grange-elem-div'>
+            <div class='grange-img-div'>
+                <img src='../../images/grange.png'/>
+            </div>
 
+            <div class='general-info-div'>
+                <div class='middle-div'>
+                    <h4 class='grange-param'>Nom : $nom</h4>
+                    <h4 class='grange-param'>Lieu : $lieu</h4>
+                </div>
+                    
+                <div class='middle-div'>
+                    <div class='info-div'>
+                        <span class='dot'></span>
+                        <h4>$co2</h4>
+                    </div>
+                    <div class='info-div'>
+                        <span class='dot'></span>
+                        <h4>$son</h4>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        ");
+    }
+    
+    
 ?>
+

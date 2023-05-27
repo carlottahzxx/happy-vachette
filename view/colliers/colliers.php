@@ -22,19 +22,32 @@
 
     $connected = isset($_SESSION['email']);
 
+    $nom_grange = '';
+    if(isset($_GET['grange'])){
+        $nom_grange = $_GET['grange'];
+    }
+    
+    echo $nom_grange;
+
 ?>
 
 <body>
 
-<?php include("../header/header.php") ?> 
+<?php 
+    include("../header/header.php");
+    
+
+?> 
 
     </header>
 
-<main>
-    <h1>Colliers</h1>
-</main>
 
-<div class="flèche"><img src="../../images/angle-gauche.png" alt="flèche gauche">
+    <h1>Colliers</h1>
+
+
+
+
+<!-- <div class="flèche"><img src="../../images/angle-gauche.png" alt="flèche gauche">
         <img src="../../images/collier.webp">
         <img src="../../images/angle-droit.png" alt="flèche droite">
         </div>
@@ -42,7 +55,7 @@
         <a href="ajouter_collier.php"><button type="button">Ajouter</button></a>  
         <h3>Collier 1</h3>
         <a href="supprimer_collier.php"><button type="button">Supprimer</button></a>  
-</div>
+</div> -->
 
 
 <?php include("../footer/footer.php"); ?>
