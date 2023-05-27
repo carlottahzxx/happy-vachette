@@ -1,4 +1,24 @@
 <?php 
+
+    function getGrangeCollier($db,$nom_grange){
+        $colliers = [];
+
+        $query = "SELECT IdGrange FROM grange WHERE Nom='$nom_grange'";
+        $result = mysqli_query($db,$query);
+        $result = mysqli_fetch_assoc($result);
+        $id_grange = $result['IdGrange'];
+
+
+        $query = "SELECT * FROM collier WHERE IdGrange='$id_grange'";
+        $result = mysqli_query($db,$query);
+
+        while ($row = mysqli_fetch_array($result)) {
+            array_push($colliers,$row);
+        }
+        return $colliers;
+
+    }
+    
     function request_granges($email,$db){
         $nom_granges = [];
         $query = "SELECT * FROM user WHERE mail = '$email'";

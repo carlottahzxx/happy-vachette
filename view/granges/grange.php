@@ -30,6 +30,7 @@
     <?php include("../header/header.php");
         require "../granges/grange_element.php";
         require "../../controller/server_grange.php";
+
     ?> 
 
 
@@ -37,6 +38,12 @@
 
 
     <h1>Granges</h1>
+    <div>
+        <a href="ajouter_grange.php"><button type="button">Ajouter</button></a>  
+        
+        <a href="supprimer_grange.php"><button type="button">Supprimer</button></a>  
+    </div>
+
     <div class='grange-elem-wraper'>
         <?php
             $granges = grangesRequest($db);
