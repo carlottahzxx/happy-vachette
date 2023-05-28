@@ -55,6 +55,7 @@
     require '../../controller/server_grange.php';
     require '../colliers/collier_element.php';
     require '../../controller/server_collier.php';
+    require '../../controller/server_capteur.php';
 
 ?> 
 

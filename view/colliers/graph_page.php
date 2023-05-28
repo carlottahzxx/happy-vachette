@@ -16,46 +16,7 @@
     <script src="../../scripts/form.js"></script>
     <script src="../../scripts/customSubmit.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
-    <script>
-        function drawChart(date,valeur,typeCapteur){
-            const id = 'myChart'+typeCapteur.toString();
-            const can = document.getElementById(id);
-            const labels = date;
-            var titre = "";
-
-            if(typeCapteur ===1){
-                titre = "Rythme Cardiaque";
-            }else if(typeCapteur === 2){
-                titre = "Température";
-            }else if(typeCapteur === 3){
-                titre = "Niveau Sonore";
-            }else if(typeCapteur === 2){
-                titre = "CO2";
-            }
-
-
-            const data = {
-            labels: labels,
-            datasets: [{
-                label: titre,
-                data: valeur,
-                fill: false,
-                borderColor: 'rgb(75, 192, 192)',
-                tension: 0.1
-                }]
-            };
-
-            const config = {
-                type: 'line',
-                data: data,
-            };
-
-            new Chart(can,config);
-        }
-
-    </script>
+    <script src="../../scripts/chartMaker.js"></script>
     
 </head>
 
@@ -71,6 +32,43 @@
         $id_collier = $_GET['collier'];
     }
 
+    date_default_timezone_set('Europe/Paris');
+    $timeEnd = new DateTime();
+    $timeStart = $timeEnd->modify('-1 day');
+    
+    $timeEnd = new DateTime();
+    $timeEnd = $timeEnd->format("Y-m-d h:i");
+    $timeStart = $timeStart->format("Y-m-d h:i");
+
+    $timeStart1 = $timeStart;
+    $timeEnd1 = $timeEnd;
+
+    $timeStart2 = $timeStart;
+    $timeEnd2 = $timeEnd;
+
+    $timeStart3 = $timeStart;
+    $timeEnd3 = $timeEnd;
+
+    $timeStart4 = $timeStart;
+    $timeEnd4 = $timeEnd;
+
+    if(isset($_GET['timeStart1'])){
+        $timeStart1 = $_GET['timeStart1'];
+        $timeEnd1 = $_GET['timeEnd1'];
+    }
+    if(isset($_GET['timeStart2'])){
+        $timeStart2 = $_GET['timeStart2'];
+        $timeEnd2 = $_GET['timeEnd2'];
+    }
+    if(isset($_GET['timeStart3'])){
+        $timeStart3 = $_GET['timeStart3'];
+        $timeEnd3 = $_GET['timeEnd3'];
+    }
+    if(isset($_GET['timeStart4'])){
+        $timeStart4 = $_GET['timeStart4'];
+        $timeEnd4 = $_GET['timeEnd4'];
+    }
+
 
 ?>
 
@@ -80,13 +78,12 @@
     include("../header/header.php");
 ?> 
 <h1>Visualisation data</h1>
-<div>
-
+<div class='all-charts'>
     <?php 
-    graph($db,1,$id_collier);
-    graph($db,2,$id_collier);
-    graph($db,3,$id_collier);
-    graph($db,4,$id_collier);
+    graph($db,1,$id_collier,$timeStart1,$timeEnd1);
+    graph($db,2,$id_collier,$timeStart2,$timeEnd2);
+    graph($db,3,$id_collier,$timeStart3,$timeEnd3);
+    graph($db,4,$id_collier,$timeStart4,$timeEnd4);
     ?>
 </div>  
 
