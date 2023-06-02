@@ -86,7 +86,7 @@
                 <p>De nombreux éleveurs nous font confiance !</p>
             </figcaption>
 
-            <a href="#"></a><img class="image-vachette" src="../../images/vachette.jpg" alt="sample45" />
+            <a href="#"></a><img class="image-vachette" src="../../images/fermier.png" alt="sample45" />
         </figure>
 
         <figure class="carre-vache">
@@ -94,7 +94,7 @@
                 <h2>Capteurs</h2>
                 <p>Les capteurs sont super.</p>
             </figcaption>
-            <a href="#"></a><img class="image-vachette" src="../../images/vachette.jpg" alt="sample59" />
+            <a href="#"></a><img class="image-vachette" src="../../images/capteur1.png" alt="sample59" />
         </figure>
 
         <figure class="carre-vache">
@@ -102,7 +102,7 @@
                 <h2>Résultats</h2>
                 <p>Des résultats top.</p>
             </figcaption>
-            <a href="#"></a><img class="image-vachette"  src="../../images/vachette.jpg" alt="sample60" />
+            <a href="#"></a><img class="image-vachette"  src="../../images/reussite2.png" alt="sample60" />
         </figure>
     </div>
 
