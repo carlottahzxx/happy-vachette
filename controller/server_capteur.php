@@ -28,4 +28,19 @@
 
     }
 
+    function getLastValue($db,$idCollier,$typeCapteur){
+        $query = "SELECT MAX(Date) as Date FROM `capteur` WHERE Type=$typeCapteur AND IdCollier=$idCollier";
+        $result = mysqli_query($db,$query);
+        $result = mysqli_fetch_assoc($result);
+        $date = $result['Date'];
+
+        //need to check is the value exists
+        $query = "SELECT Valeur FROM `capteur` WHERE Type=$typeCapteur AND IdCollier=$idCollier AND Date='$date'";
+        $result = mysqli_query($db,$query);
+        $result = mysqli_fetch_assoc($result);
+        $val = $result['Valeur'];
+
+    
+    }
+
 ?>

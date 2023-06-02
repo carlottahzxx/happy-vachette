@@ -21,8 +21,8 @@
 
 <?php
 
-    function displayList($db,$nom_grange){
-        $colliers = getGrangeCollier($db,$nom_grange);
+    function displayList($db,$nom_grange,$email){
+        $colliers = getGrangeCollier($db,$nom_grange,getUserId($db,$email));
         foreach($colliers as $col){
             $id = $col['IdCollier'];
             echo("<a class='collier-elem-div' href='../colliers/graph_page.php?collier=$id'>");
@@ -76,7 +76,7 @@
 
         <select class='grange-selector' id="grange-selector" onchange="updateCollier()">
             <?php
-                $granges  = grangesRequest($db);
+                $granges  = grangesRequest($db,getUserId($db,$email));
                 foreach($granges as $g){
                     $nom_g = $g['Nom'];
                     if($nom_g ==$nom_grange){
@@ -104,7 +104,7 @@
 
     <div class='collier-list-div'>
         <?php
-            displayList($db,$nom_grange);
+            displayList($db,$nom_grange,$email);
         ?>
 
     </div>

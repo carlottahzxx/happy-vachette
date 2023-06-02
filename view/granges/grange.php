@@ -46,7 +46,7 @@
 
     <div class='grange-elem-wraper'>
         <?php
-            $granges = grangesRequest($db);
+            $granges = grangesRequest($db,getUserId($db,$email));
             foreach($granges as $g){
                 $g_nom = $g['Nom'];
                 echo("<a class='grange-elem' href='../colliers/colliers.php?grange=$g_nom'>");
