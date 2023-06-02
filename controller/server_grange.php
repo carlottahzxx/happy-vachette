@@ -18,6 +18,58 @@
         return $granges;
     }
 
+    function getMeanCo2($db,$idGrange){
+        $colliers = [];
+        $means = [];
+        $query = "SELECT IdCollier FROM collier WHERE IdGrange=$idGrange";
+        $result = mysqli_query($db,$query);
+        while ($row = mysqli_fetch_array($result)) {
+            array_push($colliers,$row);
+        }
+        foreach($colliers as $col){
+            $id = $col['IdCollier'];
+            $query = "SELECT AVG(Valeur) AS Valeur FROM capteur WHERE IdCollier=$id AND Type=2";
+            $result = mysqli_query($db,$query);
+            $result = mysqli_fetch_assoc($result);
+            $value = $result['Valeur'];
+            array_push($means,$value);
+        }
+        if(count($means)!=0){
+            $mean = array_sum($means)/count($means);
+            return round($mean,1);
+        }else{
+            $mean = "Manquant";
+            return $mean;
+        }
+    }
+
+    function getMeanSon($db,$idGrange){
+        $colliers = [];
+        $means = [];
+        $query = "SELECT IdCollier FROM collier WHERE IdGrange=$idGrange";
+        $result = mysqli_query($db,$query);
+        while ($row = mysqli_fetch_array($result)) {
+            array_push($colliers,$row);
+        }
+        foreach($colliers as $col){
+            $id = $col['IdCollier'];
+            $query = "SELECT AVG(Valeur) AS Valeur FROM capteur WHERE IdCollier=$id AND Type=3";
+            $result = mysqli_query($db,$query);
+            $result = mysqli_fetch_assoc($result);
+            $value = $result['Valeur'];
+            array_push($means,$value);
+        }
+        if(count($means)!=0){
+            $mean = array_sum($means)/count($means);
+            return round($mean,1);
+        }else{
+            $mean = "Manquant";
+            return $mean;
+        }
+        
+        
+    }
+
 
     
     if(isset($_POST['ajout-grange'])){

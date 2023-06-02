@@ -30,6 +30,7 @@
     <?php include("../header/header.php");
         require "../granges/grange_element.php";
         require "../../controller/server_grange.php";
+        require "../../controller/server_capteur.php"
 
     ?> 
 
@@ -47,10 +48,13 @@
     <div class='grange-elem-wraper'>
         <?php
             $granges = grangesRequest($db,getUserId($db,$email));
+            
             foreach($granges as $g){
+                $value_co2 = getMeanCo2($db,$g['IdGrange']);
+                $value_son = getMeanSon($db,$g['IdGrange']);
                 $g_nom = $g['Nom'];
                 echo("<a class='grange-elem' href='../colliers/colliers.php?grange=$g_nom'>");
-                grangeElem($g['Nom'],$g['Lieu'],"Co2","Son");
+                grangeElem($g['Nom'],$g['Lieu'],$value_co2,$value_son);
                 echo('</a>');
             }
         ?>

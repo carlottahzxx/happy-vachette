@@ -28,18 +28,55 @@
 
     }
 
+    function urlPermission($db,$idCollier,$email){
+        $query = "SELECT IdGrange FROM collier WHERE IdCollier=$idCollier";
+        $result = mysqli_query($db,$query);
+        $result = mysqli_fetch_assoc($result);
+        $idGrange = $result['IdGrange'];
+
+        $query = "SELECT IdUser FROM grange WHERE IdGrange=$idGrange";
+        $result = mysqli_query($db,$query);
+        $result = mysqli_fetch_assoc($result);
+        $idUser = $result['IdUser'];
+
+        $query = "SELECT mail FROM user WHERE IdUser=$idUser";
+        $result = mysqli_query($db,$query);
+        $result = mysqli_fetch_assoc($result);
+        $mail = $result['mail'];
+
+        return($email == $mail);
+
+    }
+
     function getLastValue($db,$idCollier,$typeCapteur){
         $query = "SELECT MAX(Date) as Date FROM `capteur` WHERE Type=$typeCapteur AND IdCollier=$idCollier";
         $result = mysqli_query($db,$query);
         $result = mysqli_fetch_assoc($result);
         $date = $result['Date'];
+        
+        $info = "";
 
-        //need to check is the value exists
-        $query = "SELECT Valeur FROM `capteur` WHERE Type=$typeCapteur AND IdCollier=$idCollier AND Date='$date'";
-        $result = mysqli_query($db,$query);
-        $result = mysqli_fetch_assoc($result);
-        $val = $result['Valeur'];
+        
 
+        if($date){
+            if($typeCapteur==1){
+                $info = " bpm";
+            }elseif($typeCapteur==2){
+                $info = " °C";
+            }elseif($typeCapteur==3){
+                $info = " dB";
+            }elseif($typeCapteur==4){
+                $info = " ppm";
+            }
+
+            $query = "SELECT Valeur FROM `capteur` WHERE Type=$typeCapteur AND IdCollier=$idCollier AND Date='$date'";
+            $result = mysqli_query($db,$query);
+            $result = mysqli_fetch_assoc($result);
+            $val = $result['Valeur'];
+            $info = $val . $info;
+            return $info;
+        }
+        return "Donnée indisponible";
     
     }
 

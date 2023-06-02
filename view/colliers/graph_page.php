@@ -25,6 +25,7 @@
 
     $connected = isset($_SESSION['email']);
     require "../colliers/graph_element.php";
+    require "../../controller/server_capteur.php";
 
 
     $id_collier = 0;
@@ -79,11 +80,16 @@
 ?> 
 <h1>Visualisation data</h1>
 <div class='all-charts'>
-    <?php 
-    graph($db,1,$id_collier,$timeStart1,$timeEnd1);
-    graph($db,2,$id_collier,$timeStart2,$timeEnd2);
-    graph($db,3,$id_collier,$timeStart3,$timeEnd3);
-    graph($db,4,$id_collier,$timeStart4,$timeEnd4);
+    <?php
+    if(urlPermission($db,$id_collier,$email)){
+        graph($db,1,$id_collier,$timeStart1,$timeEnd1);
+        graph($db,2,$id_collier,$timeStart2,$timeEnd2);
+        graph($db,3,$id_collier,$timeStart3,$timeEnd3);
+        graph($db,4,$id_collier,$timeStart4,$timeEnd4);
+    }else{
+        echo("<p>Vous n'avez pas la permission pour acceder à ces données</p>");
+    }
+    
     ?>
 </div>  
 

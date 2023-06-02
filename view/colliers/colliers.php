@@ -27,7 +27,11 @@
             $id = $col['IdCollier'];
             echo("<a class='collier-elem-div' href='../colliers/graph_page.php?collier=$id'>");
             //collierElement($numero,$img,$nom_vache,$heart,$temp,$sound,$co2)
-            collierElement($col['IdCollier'],"vachette.jpg","Nom de la Vache","80 bpm","38 °C","78 dB","200 ppm");
+            $heart = getLastValue($db,$id,1);
+            $temp = getLastValue($db,$id,2);
+            $sound = getLastValue($db,$id,3);
+            $co2 = getLastValue($db,$id,4);
+            collierElement($col['IdCollier'],"vachette.jpg","Nom de la Vache",$heart,$temp,$sound,$co2);
             echo("</a>");
         }
         if(count($colliers) == 0){

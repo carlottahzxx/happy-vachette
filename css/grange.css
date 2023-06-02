@@ -52,21 +52,16 @@
     width: 22vw;
 }
 
-.middle-div{
-    display: flex;
-    font-size: 4vw;
-}
 
 .middle-div{
     display: flex;
-    font-size: 2.4vw;
+    font-size: 2vw;
     width: 100%;
 }
 
 .dot {
     height: 3vw;
     width: 3vw;
-    background-color: #37dc05;
     border-radius: 50%;
     display: inline-block;
     margin-right: 1vw;
@@ -78,6 +73,8 @@
     align-items: center;
     
 }
+
+
 
 .grange-param{
     margin-right: 3vw;
