@@ -103,6 +103,20 @@
     color: #000000;
     text-decoration: none;
 }
+.supr-div{
+    display: flex;
+    align-items: center;
+}
+
+.grange-selector{
+    width:10%;
+    height: 1%;
+    font-size: 1vw;
+    text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    
+}
 
 
   

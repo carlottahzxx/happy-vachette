@@ -163,3 +163,17 @@ canvas{
     margin-bottom: 10vw;
 }
 
+.supr-div{
+    display: flex;
+    align-items: center;
+}
+
+.collier-selector{
+    width: 4%;
+    height: 1%;
+    font-size: 1vw;
+    text-align: center;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    
+}

@@ -69,8 +69,12 @@
 <h1>Colliers</h1>
     <div>
         <a href="ajouter_collier.php"><button type="button">Ajouter</button></a>  
+        <?php
+        echo("
+        <a href='supprimer_collier.php?grange=$nom_grange'><button type='button'>Supprimer</button></a> 
+        ");
         
-        <a href="supprimer_collier.php"><button type="button">Supprimer</button></a>  
+        ?>
     </div>
 
     <div class='grange-selector-div'>

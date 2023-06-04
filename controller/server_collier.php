@@ -34,6 +34,21 @@
         return $nom_granges;
     }
 
+    function requestCollier($db,$nom_grange){
+        $query = "SELECT IdGrange FROM grange WHERE Nom='$nom_grange'";
+        $result = mysqli_query($db,$query);
+        $result = mysqli_fetch_assoc($result);
+        $id_grange = $result['IdGrange'];
+
+        $collier = [];
+        $query = "SELECT IdCollier FROM collier WHERE IdGrange='$id_grange'";
+        $result = mysqli_query($db,$query);
+        while ($row = mysqli_fetch_array($result)) {
+        array_push($collier,$row['IdCollier']);
+        }
+        return $collier;
+    }
+
 
     if(isset($_POST['ajout-collier'])){
         $grange = $_POST['selected-grange'];
@@ -62,6 +77,14 @@
         }
 
 
+    }
+
+    if(isset($_POST['supprimer-collier'])){
+        $idCollier = $_POST['selection-collier'];
+        $query = "DELETE FROM collier WHERE IdCollier=$idCollier";
+        mysqli_query($db,$query);
+        header("Location:colliers.php");
+        exit;
     }
 
     
