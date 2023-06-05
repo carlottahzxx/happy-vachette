@@ -95,7 +95,7 @@
 
             $query = "INSERT INTO grange (Lieu,Nom,IdUser) VALUES ('$lieu','$nom','$id_user')";
             mysqli_query($db, $query);
-            header("Location:../granges/grange.php",true);
+            header("Location:grange.php");
             exit();
 
         }
