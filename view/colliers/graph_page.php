@@ -17,6 +17,7 @@
     <script src="../../scripts/customSubmit.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../../scripts/chartMaker.js"></script>
+    <script src="../../scripts/adminIns.js"></script>
     
 </head>
 

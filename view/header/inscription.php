@@ -13,6 +13,12 @@
         <input type="password" id="insPsw" placeholder="Votre Mot de passe" name="psw" required/> 
         <input type="password" id="confpsw" placeholder="Confirmer le mot de passe" name="confpsw" required/> 
         <input type="checkbox" id="cgu" required/>J'accepte les<a href="../pages/general/CGU.php">CGU</a>
+        <div class = 'admin-div'>
+            <input type="checkbox" id="admin-box" value="Yes" name='admin-box' onclick="popInput()"/>Compte administrateur
+        </div>
+        <div id='psw-admin-div'>
+            
+        </div>
         <button type="submit" class="btn" name="register">S inscrire</button>
 
         Déjà un compte ? 

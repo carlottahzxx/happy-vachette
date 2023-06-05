@@ -16,6 +16,7 @@
     <script src="../../scripts/form.js"></script>
     <script src="../../scripts/customSubmit.js"></script>
     <script src="../../scripts/grangeSelector.js"></script>
+    <script src="../../scripts/adminIns.js"></script>
     
 </head>
 

@@ -106,11 +106,25 @@ if(isset($_POST['login'])){
 
 
 if(isset($_POST['register'])){
+
+    $admin_pswd = "";
+    $admin = 0;
+    $valid_admin = "HappyVachette";
+
     $name = mysqli_real_escape_string($db, $_POST['name']);
     $familyName = mysqli_real_escape_string($db, $_POST['familyName']);
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $psw = mysqli_real_escape_string($db, $_POST['psw']);
     $confpsw = mysqli_real_escape_string($db, $_POST['confpsw']);
+
+    $admin_box = mysqli_real_escape_string($db, $_POST['admin-box']);
+
+    if($admin_box == 'Yes'){
+        $admin_pswd = mysqli_real_escape_string($db, $_POST['adminpsw']);
+        if($admin_pswd == $valid_admin){
+            $admin = 1;
+        }
+    }
 
 
     if($psw!=="" && $email!==""){
@@ -140,14 +154,17 @@ if(isset($_POST['register'])){
                 array_push($insErrors,'An account already exists with this email');
                 
             }
-    
         }
+
+        if($admin_pswd != "" && $admin_pswd != $valid_admin){
+            array_push($insErrors,'The administrator password is incorrect');
+        } 
 
         if(count($insErrors)==0){
             $psw = md5($psw);
 
             $query = "INSERT INTO user (mail, pswd,familyName,firstName,administrator)
-            VALUES ('$email','$psw','$familyName','$name',0)";
+            VALUES ('$email','$psw','$familyName','$name',$admin)";
 
             $_SESSION['email'] = $email;
             $_SESSION['firstName'] = $name;
