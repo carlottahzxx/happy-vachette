@@ -19,24 +19,18 @@
 </head>
 
 
-<?php
-    session_start();
-
+<?php session_start();
     $connected = isset($_SESSION['email']);
-
 ?>
 
 <body>
-
-<?php include("../header/header.php");
+<?php 
+    include("../header/header.php");
     echo('
     </header>
     <h1>Ajouter une Grange</h1>
     ');
-
     require '../../controller/server_grange.php';
-    
-
 ?> 
     
     

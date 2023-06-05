@@ -1,5 +1,4 @@
 <?php
-
     function getUserId($db,$email){
         $query = "SELECT IdUser FROM user WHERE mail='$email'";
         $result = mysqli_query($db,$query);
@@ -70,8 +69,6 @@
         
     }
 
-
-    
     if(isset($_POST['ajout-grange'])){
         $nom = $_POST['nom-grange'];
         $lieu =$_POST['lieu-grange'];
@@ -106,5 +103,7 @@
         $grange = $_POST['selection-grange'];
         $query = "DELETE FROM grange WHERE Nom='$grange'";
         mysqli_query($db,$query);
-        header("location: grange.php");
-        exit();}?>
+        header("Location: grange.php");
+        exit();
+    }
+?>
