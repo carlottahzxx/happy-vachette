@@ -115,6 +115,7 @@ if(isset($_POST['register'])){
     $admin_pswd = "";
     $admin = 0;
     $valid_admin = "HappyVachette";
+    $admin_box = "";
 
     $name = mysqli_real_escape_string($db, $_POST['name']);
     $familyName = mysqli_real_escape_string($db, $_POST['familyName']);
@@ -122,7 +123,10 @@ if(isset($_POST['register'])){
     $psw = mysqli_real_escape_string($db, $_POST['psw']);
     $confpsw = mysqli_real_escape_string($db, $_POST['confpsw']);
 
-    $admin_box = mysqli_real_escape_string($db, $_POST['admin-box']);
+    if(isset($_POST['admin-box']){
+        $admin_box = mysqli_real_escape_string($db, $_POST['admin-box']);
+    })
+    
 
     if($admin_box == 'Yes'){
         $admin_pswd = mysqli_real_escape_string($db, $_POST['adminpsw']);
