@@ -106,7 +106,7 @@
         $grange = $_POST['selection-grange'];
         $query = "DELETE FROM grange WHERE Nom='$grange'";
         mysqli_query($db,$query);
-        header("Location:/grange.php");
+        header("Location:grange.php");
         exit;
     }
 
