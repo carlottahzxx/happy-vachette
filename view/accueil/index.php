@@ -107,26 +107,28 @@
         </figure>
     </div>
 
+        <h1 class="equipe-text">Notre Equipe</h1>
 
         <div class="botom-section">
-            <div class="portrait-antoine">
+            <div class="portrait antoine">
                 <footer class = "middle-section-footer">Antoine</footer>
             </div>
-            <div class="portrait-antoine">
+        
+            <div class="portrait maxence">
                 <footer class = "middle-section-footer">Maxence</footer>
             </div>
-            <div class="portrait-antoine">
+            <div class="portrait leonard">
                 <footer class = "middle-section-footer">Léonard</footer>
             </div>
         </div>
         <div class = "botom-section"> 
-            <div class="portrait-antoine">
+            <div class="portrait carlotta">
                 <footer class = "middle-section-footer">Carlotta</footer>
             </div>
-            <div class="portrait-antoine">
+            <div class="portrait daniel">
                 <footer class = "middle-section-footer">Daniel</footer>
             </div>
-            <div class="portrait-antoine">
+            <div class="portrait lea">
                 <footer class = "middle-section-footer">Léa</footer>
             </div>
         </div>  

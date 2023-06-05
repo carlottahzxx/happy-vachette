@@ -91,9 +91,8 @@
     border-radius: 30px;
 }
 
-.portrait-antoine{
+.portrait{
     display: flex;
-    background-image: url("../images/vachette.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -102,6 +101,37 @@
     border-radius: 30px;
     justify-content: center;
     align-items: end;
+    font-size: 1.4vw;
+}
+
+.antoine{
+    background-image: url("../images/Antoine.jpg");
+}
+
+.maxence{
+    background-image: url("../images/Maxence.jpg");
+    color: #ffffff;
+}
+
+.leonard{
+    background-image: url("../images/Leonard.jpg");
+}
+
+.carlotta{
+    background-image: url("../images/Carlotta.jpg");
+    color: #ffffff;
+}
+
+.daniel{
+    background-image: url("../images/Daniel.jpg");
+}
+
+.lea{
+    background-image: url("../images/Lea.jpg");
+}
+
+.middle-section-footer{
+    margin-top: 3vw;
 }
 
 
@@ -207,4 +237,10 @@
 
 *{
     box-sizing: border-box;
+}
+
+.equipe-text{
+    margin: 5vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3vw;
 }
