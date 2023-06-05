@@ -96,7 +96,7 @@
             $query = "INSERT INTO grange (Lieu,Nom,IdUser) VALUES ('$lieu','$nom','$id_user')";
             mysqli_query($db, $query);
             header("Location:grange.php");
-            exit;
+            exit();
 
         }
 
@@ -107,7 +107,7 @@
         $query = "DELETE FROM grange WHERE Nom='$grange'";
         mysqli_query($db,$query);
         header("Location:grange.php");
-        exit;
+        exit();
     }
 
 
