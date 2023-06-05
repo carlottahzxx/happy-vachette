@@ -76,8 +76,14 @@ $email = "";
 $confpsw = "";
 $insErrors = array();
 $conErrors = array();
+
 require_once 'conf.php';
-$db = mysqli_connect($host, $user, $pass, $base);
+echo $host;
+if($host!=""){
+    $db = mysqli_connect($host, $user, $pass, $base);
+}else{
+    $db = mysqli_connect("localhost", "root", "root", "happyvachette");
+}
 
 
 if(isset($_POST['login'])){

@@ -31,7 +31,7 @@
         $connected = false;
     }
     
-
+    require_once '../../controller/conf.php';
 
 ?>
 
