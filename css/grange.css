@@ -120,11 +120,19 @@
 
 
 
-label {
+label{
     width: 110px;
     display: inline-block;
     vertical-align: top;
     margin: 6px;
-  }
-  
+}
+
+.ajout-grange-div form{
+    display: flex;
+    margin-top: 2vw;
+}
+
+.ajout-grange-div form *{
+    margin-left: 2vw;
+}
 

@@ -66,17 +66,9 @@
 
 
 </header>
-
+<main>
 <h1>Colliers</h1>
-    <div>
-        <a href="ajouter_collier.php"><button type="button">Ajouter</button></a>  
-        <?php
-        echo("
-        <a href='supprimer_collier.php?grange=$nom_grange'><button type='button'>Supprimer</button></a> 
-        ");
-        
-        ?>
-    </div>
+    
 
     <div class='grange-selector-div'>
         
@@ -106,9 +98,19 @@
             ?>
             
         </select>
-
+        
+        
     
     
+    </div>
+    <div>
+            <a href="ajouter_collier.php"><button type="button">Ajouter</button></a>  
+            <?php
+                echo("
+                <a href='supprimer_collier.php?grange=$nom_grange'><button type='button'>Supprimer</button></a> 
+                ");
+                
+            ?>
     </div>
 
     <div class='collier-list-div'>
@@ -118,7 +120,7 @@
 
     </div>
 
-
+</main>
 
 <?php include("../footer/footer.php"); ?>
 

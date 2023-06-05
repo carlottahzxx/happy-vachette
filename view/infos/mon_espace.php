@@ -20,31 +20,68 @@
     session_start();
 
     $connected = isset($_SESSION['email']);
+    if($connected){
+        $email = $_SESSION['email'];
+        $name = $_SESSION['firstName'] ;
+        $familyName = $_SESSION['familyName'];
+
+    }
 
 ?>
 <body>
 
-<?php include("../header/header.php") ?> 
+<?php include("../header/header.php");
+    require_once '../../controller/server_faq.php';
+    require_once '../../controller/server_info.php';
+
+    $admin = isAdmin($db,$email);
+    if($admin){
+        $type = "administrateur";
+    }else{
+        $type = "client";
+    }
+?> 
 
 <div class="titre">Mon profil</div>
 
-<a class="logo-modif"><img src="../../images/edit.png "alt="logo-modif">
 
-<form>
-    <div>
-        <label for="name">Nom :</label><input type="text" id="name">
-    </div>
-    <div>
-        <label for="name">Prénom :</label><input type="text" id="name">
-    </div>
-    <div>
-        <label for="mail">Adresse mail :</label><input type="text" id="name">
-    </div>
-    <div>
-        <label for="statut">Statut :</label><input type="text" id="statut">
-    </div>
-    <div class="button">
-        <button type="submit">Enregistrer</button>
+<form class='formulaire' method='post'>
+    <div class='general-div'>
+        <div class='input-elem'>
+            <label for="name">Nom :</label>
+            <?php
+                echo("
+                <input type='text' name='famille' value='$familyName'/>
+                ");
+            ?>
+        </div>
+        <div class='input-elem'>
+            <label for="name">Prénom :</label>
+            <?php
+                echo("
+                <input type='text' name='prenom' value='$name'/>
+                ");
+            ?>
+        </div>
+        <div class='input-elem'>
+            <label for="mail">Adresse mail :</label>
+            <?php
+                echo("
+                <input type='text' name='email' value='$email' readonly/>
+                ");
+            ?>
+        </div>
+        <div class='input-elem'>
+            <label for="statut">Statut :</label>
+            <?php
+            echo("
+            <input type='text' value='$type' readonly/>
+            ");
+            ?>
+        </div>
+        <div class="button">
+            <button type="submit" name="enregistrer">Enregistrer</button>
+        </div>
     </div>
 </form>
 
