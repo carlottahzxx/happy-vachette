@@ -78,7 +78,7 @@ $insErrors = array();
 $conErrors = array();
 
 require_once 'conf.php';
-echo $host;
+
 if($host!=""){
     $db = mysqli_connect($host, $user, $pass, $base);
 }else{
