@@ -171,6 +171,12 @@ if(isset($_POST['register'])){
             $_SESSION['familyName'] = $familyName;
             $connected = true;
             $sessionEmail = $email;
+
+            require_once "../../controller/server_mail.php";
+            envoieMail($email,"Bienvenue chez HappyVachette !","L'équipe d'Happy vachette est heureuse 
+            de vous compter comme nouveau membre ! Commencez dès maintenant à assignr vos colliers à
+             vos vaches. Rendez vous dans la catégorie \"Contact\" de notre site si vous avez des questions !");
+
             mysqli_query($db, $query);
            
         }

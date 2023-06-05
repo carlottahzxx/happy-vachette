@@ -30,6 +30,7 @@
         session_destroy();
         $connected = false;
     }
+    
 
 
 ?>

@@ -1,4 +1,5 @@
 <?php
+    require_once "../../controller/server_mail.php";
 
     function isAdmin($db,$email){
         $query = "SELECT administrator FROM user WHERE mail='$email'";
@@ -49,6 +50,11 @@
         if($question!=''){
             $query = "INSERT INTO faq(question,answer,answered,author,inFaq) VALUES ('$question','',0,'$email',0)";
             mysqli_query($db, $query);
+
+            envoieMail($email,"Vos nous avez contacté","<p>Nous avons bien recu votre question ! 
+            Nous allons y répondre dans les plus bref délais ! </p><p>Merci de votre confiance</p>
+            <p>L'equipe Happy Vachette</p>");
+
         }
        
         
@@ -66,8 +72,19 @@
         }
 
         if($reponse != ''){
+            $query = "SELECT * FROM faq WHERE IdFaq=$id_faq";
+            $result = mysqli_query($db,$query);
+            $result = mysqli_fetch_assoc($result);
+            $email = $result['author'];
+            $question = $result['question'];
+
             $query = "UPDATE faq SET answer='$reponse',answered=1,inFaq=$inFaq WHERE IdFaq=$id_faq";
             mysqli_query($db, $query);
+
+            
+            envoieMail($email,"Réponse a votre question","<p>A l'écoute de nos clients, voici la réponse votre question :
+            </p> <p>$question </p> <p>Réponse de votre conseiller Happy Vachette : $reponse </p>");
+
             header("Location:admin_contact.php");
             exit;
         }
