@@ -76,7 +76,8 @@ $email = "";
 $confpsw = "";
 $insErrors = array();
 $conErrors = array();
-$db = mysqli_connect('localhost', 'root', 'root', 'happyvachette');
+require_once 'conf.php';
+$db = mysqli_connect($host, $user, $pass, $base);
 
 
 if(isset($_POST['login'])){
