@@ -123,9 +123,9 @@ if(isset($_POST['register'])){
     $psw = mysqli_real_escape_string($db, $_POST['psw']);
     $confpsw = mysqli_real_escape_string($db, $_POST['confpsw']);
 
-    if(isset($_POST['admin-box']){
+    if(isset($_POST['admin-box'])){
         $admin_box = mysqli_real_escape_string($db, $_POST['admin-box']);
-    })
+    }
     
 
     if($admin_box == 'Yes'){
