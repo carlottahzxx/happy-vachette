@@ -119,5 +119,12 @@
 }
 
 
+
+label {
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px;
+  }
   
 

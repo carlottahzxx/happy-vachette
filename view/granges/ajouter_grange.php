@@ -36,8 +36,8 @@
     
     <div>
         <form method = "post" id="ajout-grange-form">
-            <input type="text" name="nom-grange" placeholder="Nom" required/>
-            <input type="text" name="lieu-grange" placeholder="Lieu" required/>
+            <label for="nom"><input type="text" name="nom-grange" placeholder="Nom" required/>
+            <label for="Lieu"><input type="text" name="lieu-grange" placeholder="Lieu" required/>
             <button type="submit" name="ajout-grange">Ajouter</button>
         </form>
 
