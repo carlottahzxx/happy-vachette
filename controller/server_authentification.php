@@ -38,16 +38,14 @@
 
     }
 
-    function firstNameFromMail($mail){
-        $db = mysqli_connect('localhost', 'root', 'root', 'happyvachette');
+    function firstNameFromMail($db,$mail){
         $query = "SELECT firstName FROM user WHERE mail='$mail'";
         $result = mysqli_query($db,$query);
         
         return $result->fetch_row()[0];
     }
 
-    function familyNameFromMail($mail){
-        $db = mysqli_connect('localhost', 'root', 'root', 'happyvachette');
+    function familyNameFromMail($db,$mail){
         $query = "SELECT familyName FROM user WHERE mail='$mail'";
         $result = mysqli_query($db,$query);
 
@@ -96,8 +94,8 @@ if(isset($_POST['login'])){
     $can_conn = mysqli_fetch_assoc($result);
 
     if($can_conn){
-        $name = firstNameFromMail($email);
-        $lastName = familyNameFromMail($email);
+        $name = firstNameFromMail($db,$email);
+        $lastName = familyNameFromMail($db,$email);
         $_SESSION['email'] = $email;
         $_SESSION['firstName'] = $name;
         $_SESSION['familyName'] = $lastName;
