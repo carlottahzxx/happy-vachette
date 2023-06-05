@@ -28,6 +28,13 @@
 
 <?php 
     include("../header/header.php");
+    require_once '../../controller/server_faq.php';
+    
+    $delete = 0;
+    if(isset($_GET['delete'])){
+        $delete = $_GET['delete'];
+        dropQuestion($db,$delete);
+    }
 ?> 
 
     <h1>Questions utilisateur</h1>

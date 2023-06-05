@@ -14,7 +14,7 @@
                     <h4>Auteur : $author</h4>
                     <div class='answer-div'>
                         <a class='repondre' href='../footer/reponse.php?id=$id'>Repondre</a>
-                        <a class='corbeille'><img src='../../images/corbeille.png'/></a>
+                        <a class='corbeille' href='../footer/admin_contact.php?delete=$id'><img src='../../images/corbeille.png'/></a>
                     </div>
                 </div>
     

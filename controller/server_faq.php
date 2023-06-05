@@ -8,6 +8,12 @@
         return $admin;
     }
 
+    function dropQuestion($db,$questionId){
+        $query = "DELETE FROM faq WHERE IdFaq=$questionId";
+        mysqli_query($db,$query);
+
+    }
+
     function getPendingQuestions($db){
         $questions = [];
         $query = "SELECT * FROM faq WHERE answered=0";
