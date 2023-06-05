@@ -9,7 +9,7 @@
         <p class="p-error" id='errorText'></p>
         <input type="text" id="firstName" placeholder="Votre prenom" name="name" required />
         <input type="text" id="name" placeholder="Votre nom" name="familyName" required />
-        <input type="text" id="insEmail" placeholder="Votre Email" name="email" required />
+        <input type="email" id="insEmail" placeholder="Votre Email" name="email" required />
         <input type="password" id="insPsw" placeholder="Votre Mot de passe" name="psw" required/> 
         <input type="password" id="confpsw" placeholder="Confirmer le mot de passe" name="confpsw" required/> 
         <input type="checkbox" id="cgu" required/>J'accepte les<a href="../pages/general/CGU.php">CGU</a>

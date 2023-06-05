@@ -47,3 +47,103 @@
     margin-right: 40px;
     
 }
+.erreur_connexion{
+    margin: 8vw;
+    font-size: 2vw;
+}
+
+.success-message{
+    margin: 1vw;
+    font-size: 1vw;
+
+}
+
+.general-question-div{
+    display: flex;
+    justify-content: center;
+    border-radius: 2vw;
+    
+
+}
+
+.question-div{
+    text-align: justify;
+    background-color: grey;
+    width : 60%;
+    border-radius: 2vw;
+    margin-top: 3vw;
+}
+
+.suppression{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.corbeille img{
+    width: 3vw;
+}
+
+.corbeille{
+    cursor: pointer;
+}
+.question-div div,p{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.question-list{
+    margin-top: 3vw;
+}
+
+.repondre{
+    margin-right: 1vw;
+    text-decoration: none;
+    color: black;
+}
+
+.repondre:hover{
+    text-decoration: underline;
+}
+
+.answer-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reponse-faq{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+
+.reponse-faq *{
+    margin-top: 1.2vw;
+}
+
+.reponse-faq button{
+    width :8vw;
+}
+
+.checkbox-rep{
+    font-size: 1.3vw;
+}
+
+.textarea{
+    border-radius: 1vw;
+    margin-left: 7em;
+    margin-right: 7em;
+    width: 50em;
+}
+
+.rep-area{
+    width: 50em;
+    border-radius: 1vw;
+    font-size: 1.2vw;
+}
+
+.faq-question{
+    margin: 2vw;
+    font-size:1.4vw;
+}

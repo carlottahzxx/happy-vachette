@@ -21,21 +21,57 @@
     session_start();
 
     $connected = isset($_SESSION['email']);
+    if($connected){
+        $email = $_SESSION['email'];
+    }
 
 ?>
 
 <body>
 
-<?php include("../header/header.php") ?> 
-    <main>
-  <h1>FAQ</h1>
-  <details>
-  <summary>Mon capteur ne fonctionne pas, que faire ?</summary>
-  <div>
-Faut le jeter  </div>
-</details>
+<?php 
+    include("../header/header.php");
+    require_once "../../controller/server_faq.php";
+?> 
+<main>
+    <h1>FAQ</h1>
+
+    <?php
+        $questions = requestFaqQuestions($db);
+        foreach($questions as $q){
+            $ques = $q['question'];
+            $rep = $q['answer'];
+            echo("
+            <details class='faq-question'>
+                <summary>$ques</summary>
+                <p>$rep</p>
+            </details>
+            ");
+        }
+
+        if(count($questions)==0){
+            echo("Cette catégorie ne contient aucune question pour le moment");
+        }
+
+    ?>
+    
+
 </div>
-        <h2>D'autres questions ? Cliquez <a href="contact.php">ici</a> </h2>
+        <h2>D'autres questions ? Cliquez
+            <?php 
+                $admin=isAdmin($db,$email); 
+                if($admin){
+                    echo("
+                    <a href='admin_contact.php'>ici</a> 
+                    ");
+                }else{
+                    echo("
+                    <a href='contact.php'>ici</a> 
+                    ");
+                }
+            ?>
+            
+        </h2>
 
     </main>
     <?php include("../footer/footer.php"); ?>

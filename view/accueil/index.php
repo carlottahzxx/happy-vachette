@@ -103,7 +103,7 @@
                 <h2>Résultats</h2>
                 <p>Des résultats top.</p>
             </figcaption>
-            <a href="#"></a><img class="image-vachette"  src="../../images/reussite.png" alt="sample60" />
+            <a href="#"></a><img class="image-vachette"  src="../../images/work.png" alt="sample60" />
         </figure>
     </div>
 

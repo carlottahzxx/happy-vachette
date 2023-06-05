@@ -2,11 +2,14 @@
 
     function getGrangeCollier($db,$nom_grange,$idUser){
         $colliers = [];
-
+        $id_grange = 0;
         $query = "SELECT IdGrange FROM grange WHERE Nom='$nom_grange' AND IdUser=$idUser";
         $result = mysqli_query($db,$query);
         $result = mysqli_fetch_assoc($result);
-        $id_grange = $result['IdGrange'];
+        if($result!=null){
+            $id_grange = $result['IdGrange'];
+        }
+       
 
 
         $query = "SELECT * FROM collier WHERE IdGrange='$id_grange'";

@@ -28,31 +28,17 @@
 
 <?php 
     include("../header/header.php");
-    require "../../controller/server_faq.php";
-    if(!$connected){
-        echo "<p class='erreur_connexion'>Veuillez vous connecter ou créer un compte pour poser une question</p>";
-        include("../footer/footer.php");
-        exit();
-    }else{
-        $email = $_SESSION['email'];
-    }
-
 ?> 
 
+    <h1>Questions utilisateur</h1>
 
+
+    <?php include("../footer/question_elem.php");?>
+
+
+    <?php
+    include("../footer/footer.php"); 
     
-    <main>
-        <h1>Nous contacter</h1>
-        <form method='post' onsubmit='success()'>
-            <p class='success-message' id ='success-message'></p>
-            <label for="question"><h2>Question :</h2></label>
-            <textarea class='textarea' id="question" name="question" rows="5" cols="25"></textarea>
-            <button type='submit' name="send">Envoyer</button>
-        </form>
-
-        <a class="logo_insta" href="https://www.instagram.com/happyyvachette/"><img src="../../images/instagram.png" alt="instagram"/></p></a>
-
-    </main>
-    <?php include("../footer/footer.php"); ?>
+    ?>
 </body>
 </html>

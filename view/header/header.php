@@ -40,7 +40,7 @@
                         
                         if($connected){
                             echo '<li><a href="../granges/grange.php">Granges</a></li>
-                            <li><a href="../vaches/vaches.php">Vaches</a></li>
+                           
                             <li><a href="../colliers/colliers.php">Colliers</a></li>';
                         }else{
                             echo '<li><a onclick="openConForm()">Connectez vous</a></li>';
