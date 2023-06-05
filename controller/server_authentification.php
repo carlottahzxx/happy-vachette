@@ -80,7 +80,7 @@ require_once 'conf.php';
 if($host!=""){
     $db = mysqli_connect($host, $user, $pass, $base);
 }else{
-    $db = mysqli_connect("localhost", "root", "root", "happyvachette");
+    $db = mysqli_connect("herogu.garageisep.com", "rjrGkjVatX_happyvache", "y8whDF9Jz1vMLVb6", "Po1GgQPSkW_happyvache");
 }
 
 
