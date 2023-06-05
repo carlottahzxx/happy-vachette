@@ -62,7 +62,7 @@
                     
 
                     echo '
-                    <a class = "logo-connect"> 
+                    <a class = "logo-connect" href="../infos/mon_espace.php"> 
                     <img src="../../images/compte.png" alt="logo-compte" /></a> 
                     
                 </div>';

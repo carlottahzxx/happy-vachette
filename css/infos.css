@@ -1,0 +1,60 @@
+
+
+.logo-modif img{
+
+    width: 4%;
+
+
+
+}
+
+
+.titre{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.infos{
+    margin-top: 15px;
+    font-size: 1.5em;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.réponses{
+    margin-top: 15px;
+    font-size: 1.5em;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.container {
+    column-width: 550px ;
+
+    height: 250px;
+  }
+.champs{
+    font-size: 30px;
+}
+.rep{
+    font-size: 30px;
+}
+.container{
+    margin-left: 300px;
+    margin-right: 100px;
+}
+
+input{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}

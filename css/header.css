@@ -61,6 +61,8 @@ body{
     width: 100%;
     margin-bottom: 10px;
     opacity: 0.8;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.9em;
 }
 
 .form-container .cancel {
@@ -281,5 +283,14 @@ justify-content: end;
 .mdp{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 0.5em;
+
 }
+
+.compte{
+    font-size: 0.7em;
+}
+.inscription{
+    font-size: 0.7em;
+}
+
 

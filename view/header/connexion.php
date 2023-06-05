@@ -11,8 +11,8 @@
         <div class="mdp">Mot de passe oublié ?</div>
         <button type="submit" class="btn" name="login">Se connecter</button>
 
-        Pas de compte ? 
-        <a class = "inscription"  onclick="openInsForm()">Inscrivez-vous</a>
+        <div class="compte">Pas de compte ?
+        <a class = "inscription"  onclick="openInsForm()">Inscrivez-vous</a></div>
         <div class="signup-popup"></div>
     </form>
 </div>
